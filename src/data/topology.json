@@ -1,0 +1,4059 @@
+{
+  "sites": [
+    {
+      "id": "hq",
+      "location": "HQ",
+      "lat": null,
+      "lng": null,
+      "devices": [
+        {
+          "device_id": 37,
+          "hostname": "srv-02.demo.lan",
+          "displayName": "srv-02.demo.lan",
+          "ip": "10.200.0.203",
+          "lanIp": "10.200.0.203",
+          "ips": [],
+          "allIps": [
+            "10.200.0.203"
+          ],
+          "macs": [],
+          "os": "linux",
+          "icon": "ubuntu.svg",
+          "status": 0,
+          "uptime": 211,
+          "location": "HQ",
+          "hardware": "ThinkCentre M720q",
+          "sysName": "srv-02.demo.lan",
+          "totalInRate": 0,
+          "totalOutRate": 0,
+          "portCount": 0,
+          "overlayPorts": []
+        },
+        {
+          "device_id": 29,
+          "hostname": "srv-03.demo.lan",
+          "displayName": "srv-03.demo.lan",
+          "ip": "10.200.16.171",
+          "lanIp": "10.200.16.171",
+          "ips": [],
+          "allIps": [
+            "10.200.16.171"
+          ],
+          "macs": [],
+          "os": "linux",
+          "icon": "raspbian.svg",
+          "status": 0,
+          "uptime": 56605,
+          "location": "HQ",
+          "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+          "sysName": "srv-03.demo.lan",
+          "totalInRate": 0,
+          "totalOutRate": 0,
+          "portCount": 0,
+          "overlayPorts": []
+        },
+        {
+          "device_id": 6,
+          "hostname": "srv-04.demo.lan",
+          "displayName": "srv-04.demo.lan",
+          "ip": "10.200.17.57",
+          "lanIp": "10.200.2.165",
+          "ips": [
+            "10.200.2.165",
+            "10.200.2.153",
+            "2001:db8:0::ec46:d516",
+            "2001:db8:0::f87c:ab25",
+            "2001:db8:12::c329:7837",
+            "2001:db8:12::9dd9:87d8"
+          ],
+          "allIps": [
+            "10.200.2.165",
+            "10.200.2.153",
+            "2001:db8:0::ec46:d516",
+            "2001:db8:0::f87c:ab25",
+            "127.0.0.1",
+            "10.200.17.57",
+            "10.200.6.187",
+            "10.200.9.11",
+            "10.200.9.142",
+            "10.200.18.238",
+            "2001:db8:13::4521:b5de",
+            "2001:db8:14::4383:c493",
+            "2001:db8:6::a3a6:98a8",
+            "2001:db8:15::4629:628c",
+            "2001:db8:2::e627:f760",
+            "2001:db8:10::0672:5ae2",
+            "2001:db8:16::bc4d:3a54",
+            "2001:db8:17::0cd5:9178",
+            "2001:db8:12::c329:7837",
+            "2001:db8:12::9dd9:87d8"
+          ],
+          "macs": [
+            "029417E7019D",
+            "02B141DBA1BD",
+            "020654A75363"
+          ],
+          "os": "linux",
+          "icon": "raspbian.svg",
+          "status": 1,
+          "uptime": 78164,
+          "location": "HQ",
+          "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+          "sysName": "srv-04.demo.lan",
+          "totalInRate": 4537,
+          "totalOutRate": 4316,
+          "portCount": 7,
+          "overlayPorts": [
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.17.57",
+              "ifInOctets_rate": 48,
+              "ifOutOctets_rate": 122,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "wg1",
+              "overlayType": "wireguard",
+              "ip": "10.200.18.238",
+              "ifInOctets_rate": 223,
+              "ifOutOctets_rate": 300,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.142",
+              "ifInOctets_rate": 682,
+              "ifOutOctets_rate": 285,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.2.247",
+              "iface": "eth0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.18.116",
+              "iface": "wg1",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 35,
+          "hostname": "device-01.demo.lan",
+          "displayName": "device-01.demo.lan",
+          "ip": "10.200.9.142",
+          "lanIp": "10.200.2.247",
+          "ips": [
+            "10.200.2.247"
+          ],
+          "allIps": [
+            "10.200.2.247",
+            "10.200.19.107",
+            "10.200.9.142"
+          ],
+          "macs": [
+            "027B7A14B2E0",
+            "02D8024BFE04",
+            "0285d8a2e290"
+          ],
+          "os": "generic",
+          "icon": "generic.svg",
+          "status": 1,
+          "uptime": 60534,
+          "location": "HQ",
+          "hardware": null,
+          "sysName": "device-01.demo.lan",
+          "totalInRate": 0,
+          "totalOutRate": 0,
+          "portCount": 5,
+          "overlayPorts": [
+            {
+              "ifName": "gre0",
+              "overlayType": "gre",
+              "ip": "",
+              "ifInOctets_rate": 0,
+              "ifOutOctets_rate": 0,
+              "ifOperStatus": "down"
+            },
+            {
+              "ifName": "ppp0",
+              "overlayType": "pptp",
+              "ip": "10.200.19.107",
+              "ifInOctets_rate": 0,
+              "ifOutOctets_rate": 0,
+              "ifOperStatus": "down"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.20.176",
+              "iface": "210",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "branch-east",
+      "location": "Branch-East",
+      "lat": null,
+      "lng": null,
+      "devices": [
+        {
+          "device_id": 3,
+          "hostname": "srv-05.demo.lan",
+          "displayName": "srv-05.demo.lan",
+          "ip": "10.200.23.173",
+          "lanIp": "10.200.24.87",
+          "ips": [
+            "10.200.24.87",
+            "2001:db8:20::140d:be37"
+          ],
+          "allIps": [
+            "10.200.24.87",
+            "2001:db8:20::140d:be37",
+            "127.0.0.1",
+            "10.200.25.100",
+            "10.200.18.24",
+            "10.200.9.243",
+            "10.200.23.173",
+            "10.200.6.101",
+            "10.200.3.39",
+            "2001:db8:21::7cf2:5d05",
+            "2001:db8:22::3440:6e06",
+            "2001:db8:23::21cb:df07",
+            "2001:db8:17::06d5:530e",
+            "2001:db8:10::5240:0a0b",
+            "2001:db8:24::39f2:af88",
+            "2001:db8:6::fb6a:d042",
+            "2001:db8:25::64dd:1c72",
+            "2001:db8:2::2920:5607",
+            "2001:db8:26::e5c9:4174"
+          ],
+          "macs": [
+            "028BB0F90E94",
+            "027B8BAEA8E2",
+            "02ABE7C290BA",
+            "02251F2BD925"
+          ],
+          "os": "linux",
+          "icon": "debian.svg",
+          "status": 1,
+          "uptime": 78726,
+          "location": "Branch-East",
+          "hardware": "Not Specified",
+          "sysName": "srv-05.demo.lan",
+          "totalInRate": 681597,
+          "totalOutRate": 1126482,
+          "portCount": 9,
+          "overlayPorts": [
+            {
+              "ifName": "tun0",
+              "overlayType": "tunnel",
+              "ip": "10.200.25.100",
+              "ifInOctets_rate": 0,
+              "ifOutOctets_rate": 0,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "wghub",
+              "overlayType": "wireguard",
+              "ip": "10.200.6.101",
+              "ifInOctets_rate": 69752,
+              "ifOutOctets_rate": 512440,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.243",
+              "ifInOctets_rate": 85,
+              "ifOutOctets_rate": 152,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.23.173",
+              "ifInOctets_rate": 41108,
+              "ifOutOctets_rate": 4389,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.13.180",
+              "iface": "ens5",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.2.128",
+              "prefix": 24,
+              "nextHop": "10.200.9.11",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "branch-west",
+      "location": "Branch-West",
+      "lat": null,
+      "lng": null,
+      "devices": [
+        {
+          "device_id": 46,
+          "hostname": "srv-06.demo.lan",
+          "displayName": "srv-06.demo.lan",
+          "ip": "10.200.26.237",
+          "lanIp": "10.200.2.28",
+          "ips": [
+            "10.200.2.28",
+            "10.200.2.63",
+            "2001:db8:27::ec93:6458",
+            "2001:db8:27::b068:391e"
+          ],
+          "allIps": [
+            "10.200.2.28",
+            "10.200.2.63",
+            "2001:db8:27::ec93:6458",
+            "2001:db8:27::b068:391e",
+            "127.0.0.1",
+            "10.200.6.240",
+            "10.200.26.237",
+            "10.200.27.32",
+            "10.200.9.52",
+            "10.200.9.175",
+            "10.200.9.68",
+            "2001:db8:28::8058:21f3",
+            "2001:db8:29::8592:0542",
+            "2001:db8:2::dc21:376e",
+            "2001:db8:6::da1b:002b",
+            "2001:db8:30::1235:4467",
+            "2001:db8:10::0487:0a84",
+            "2001:db8:31::6d0b:7e31"
+          ],
+          "macs": [
+            "02E5C6396FD7",
+            "02126A8F1C4E",
+            "027D1FC0DE64",
+            "02850C430DD1"
+          ],
+          "os": "linux",
+          "icon": "debian.svg",
+          "status": 1,
+          "uptime": 99699,
+          "location": "Branch-West",
+          "hardware": "ThinkCentre M920q",
+          "sysName": "srv-06.demo.lan",
+          "totalInRate": 10972,
+          "totalOutRate": 11253,
+          "portCount": 7,
+          "overlayPorts": [
+            {
+              "ifName": "wg0",
+              "overlayType": "wireguard",
+              "ip": "10.200.6.240",
+              "ifInOctets_rate": 312,
+              "ifOutOctets_rate": 320,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.26.237",
+              "ifInOctets_rate": 1982,
+              "ifOutOctets_rate": 2217,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.68",
+              "ifInOctets_rate": 8,
+              "ifOutOctets_rate": 22,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.2.247",
+              "iface": "eno2",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.2.128",
+              "prefix": 24,
+              "nextHop": "10.200.9.11",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 49,
+          "hostname": "rtr-02.demo.lan",
+          "displayName": "rtr-02.demo.lan",
+          "ip": "10.200.9.82",
+          "lanIp": "10.200.2.247",
+          "ips": [
+            "10.200.2.247"
+          ],
+          "allIps": [
+            "10.200.2.247",
+            "127.0.0.1",
+            "10.200.9.82"
+          ],
+          "macs": [
+            "02C37718A2D0",
+            "02C277170F77",
+            "02C4771A3549",
+            "027079E76210"
+          ],
+          "os": "openwrt",
+          "icon": "openwrt.svg",
+          "status": 1,
+          "uptime": 3628746,
+          "location": "Branch-West",
+          "hardware": "TP-Link Archer C7 v5",
+          "sysName": "rtr-02.demo.lan",
+          "totalInRate": 702162,
+          "totalOutRate": 697485,
+          "portCount": 9,
+          "overlayPorts": [
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.82",
+              "ifInOctets_rate": 82,
+              "ifOutOctets_rate": 584,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.28.73",
+              "iface": "9",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "datacenter-1",
+      "location": "Datacenter-1",
+      "lat": null,
+      "lng": null,
+      "devices": [
+        {
+          "device_id": 54,
+          "hostname": "srv-07.demo.lan",
+          "displayName": "srv-07.demo.lan",
+          "ip": "10.200.9.41",
+          "lanIp": "10.200.22.14",
+          "ips": [
+            "10.200.22.14",
+            "2001:db8:32::271d:87f8",
+            "2001:db8:32::7fea:2fb9"
+          ],
+          "allIps": [
+            "10.200.22.14",
+            "2001:db8:32::271d:87f8",
+            "2001:db8:32::7fea:2fb9",
+            "127.0.0.1",
+            "10.200.31.32",
+            "10.200.32.20",
+            "10.200.9.41",
+            "2001:db8:33::5dab:02e8",
+            "2001:db8:34::54b4:7d68",
+            "2001:db8:35::c597:e00a",
+            "2001:db8:6::c9fa:9f82",
+            "2001:db8:36::0264:9a8c",
+            "2001:db8:10::5c3f:3b65",
+            "2001:db8:37::dc51:8d0d"
+          ],
+          "macs": [
+            "029529430F77",
+            "021AF8AA9DA1",
+            "02CFE2134882",
+            "02574D22B416"
+          ],
+          "os": "linux",
+          "icon": "debian.svg",
+          "status": 1,
+          "uptime": 351083,
+          "location": "Datacenter-1",
+          "hardware": "GOOGLE Panther",
+          "sysName": "srv-07.demo.lan",
+          "totalInRate": 4069,
+          "totalOutRate": 3623,
+          "portCount": 6,
+          "overlayPorts": [
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.32.20",
+              "ifInOctets_rate": 157,
+              "ifOutOctets_rate": 278,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.41",
+              "ifInOctets_rate": 49,
+              "ifOutOctets_rate": 100,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.22.26",
+              "iface": "eth0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.2.128",
+              "prefix": 24,
+              "nextHop": "10.200.9.11",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 31,
+          "hostname": "srv-08.demo.lan",
+          "displayName": "srv-08.demo.lan",
+          "ip": "10.200.9.135",
+          "lanIp": "10.200.22.120",
+          "ips": [
+            "10.200.22.120",
+            "10.200.22.133",
+            "2001:db8:32::b549:a5ab",
+            "2001:db8:32::8488:961e"
+          ],
+          "allIps": [
+            "10.200.22.120",
+            "10.200.22.133",
+            "2001:db8:32::b549:a5ab",
+            "2001:db8:32::8488:961e",
+            "127.0.0.1",
+            "10.200.6.127",
+            "10.200.33.30",
+            "10.200.3.39",
+            "10.200.9.135",
+            "10.200.9.64",
+            "10.200.9.193",
+            "10.200.18.143",
+            "2001:db8:38::b1d8:5197",
+            "2001:db8:39::0d60:d462",
+            "2001:db8:2::6e19:3efa",
+            "2001:db8:6::cf3d:cf9a",
+            "2001:db8:40::f286:830a",
+            "2001:db8:10::2388:9182",
+            "2001:db8:41::34ae:e273",
+            "2001:db8:17::e63c:983e"
+          ],
+          "macs": [
+            "0206FAF56B0B",
+            "026182460BAB",
+            "0296bd501fc7",
+            "02DC1BC08FF7"
+          ],
+          "os": "linux",
+          "icon": "raspbian.svg",
+          "status": 1,
+          "uptime": 4321731,
+          "location": "Datacenter-1",
+          "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+          "sysName": "srv-08.demo.lan",
+          "totalInRate": 3083,
+          "totalOutRate": 3637,
+          "portCount": 8,
+          "overlayPorts": [
+            {
+              "ifName": "wg1",
+              "overlayType": "wireguard",
+              "ip": "10.200.18.143",
+              "ifInOctets_rate": 43,
+              "ifOutOctets_rate": 41,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.33.30",
+              "ifInOctets_rate": 5,
+              "ifOutOctets_rate": 5,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.193",
+              "ifInOctets_rate": 203,
+              "ifOutOctets_rate": 215,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.22.26",
+              "iface": "eth0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.2.128",
+              "prefix": 24,
+              "nextHop": "10.200.9.11",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "datacenter-2",
+      "location": "Datacenter-2",
+      "lat": null,
+      "lng": null,
+      "devices": [
+        {
+          "device_id": 40,
+          "hostname": "srv-09.demo.lan",
+          "displayName": "srv-09.demo.lan",
+          "ip": "10.200.9.171",
+          "lanIp": "10.200.34.195",
+          "ips": [
+            "10.200.34.195"
+          ],
+          "allIps": [
+            "10.200.34.195",
+            "127.0.0.1",
+            "10.200.9.171",
+            "10.200.35.205",
+            "2001:db8:42::9782:8a95",
+            "2001:db8:43::df3e:8e37",
+            "2001:db8:10::47a8:b502",
+            "2001:db8:44::9351:f831",
+            "2001:db8:6::823c:b19a",
+            "2001:db8:45::d73b:d212"
+          ],
+          "macs": [
+            "02E94DF86822",
+            "02914D6DE0CA",
+            "020DCAB7C75F"
+          ],
+          "os": "linux",
+          "icon": "arch.svg",
+          "status": 1,
+          "uptime": 2072107,
+          "location": "Datacenter-2",
+          "hardware": "Raspberry Pi 4 Model B Rev 1.4",
+          "sysName": "srv-09.demo.lan",
+          "totalInRate": 8381,
+          "totalOutRate": 2859,
+          "portCount": 5,
+          "overlayPorts": [
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.171",
+              "ifInOctets_rate": 53,
+              "ifOutOctets_rate": 148,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.35.205",
+              "ifInOctets_rate": 146,
+              "ifOutOctets_rate": 429,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.34.210",
+              "iface": "eth0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.2.128",
+              "prefix": 24,
+              "nextHop": "10.200.9.11",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 5,
+          "hostname": "fw-01.demo.lan",
+          "displayName": "fw-01.demo.lan",
+          "ip": "10.200.34.210",
+          "lanIp": "10.200.34.210",
+          "ips": [
+            "10.200.34.210",
+            "10.200.36.246",
+            "10.200.37.113",
+            "10.200.38.78",
+            "10.200.39.85"
+          ],
+          "allIps": [
+            "10.200.34.210",
+            "10.200.36.246",
+            "10.200.37.113",
+            "10.200.38.78",
+            "10.200.39.85",
+            "127.0.0.1",
+            "10.200.6.11",
+            "10.200.18.116",
+            "10.200.40.58",
+            "10.200.41.113",
+            "10.200.42.62",
+            "10.200.43.111",
+            "10.200.9.112",
+            "10.200.44.56",
+            "10.200.0.95",
+            "2001:db8:46::6b1a:3eb0",
+            "2001:db8:47::da76:3285",
+            "2001:db8:48::6ccb:0f16",
+            "2001:db8:47::dc76:968b",
+            "2001:db8:2::f128:a5b1",
+            "2001:db8:17::64eb:de53",
+            "2001:db8:47::db76:8f79",
+            "2001:db8:49::942e:a3d2",
+            "2001:db8:10::b259:4a74",
+            "2001:db8:50::3a3c:4ee1",
+            "2001:db8:6::2eb7:1c5d"
+          ],
+          "macs": [
+            "025D2BA112C0",
+            "02582B993343",
+            "02572B97A00A",
+            "025A2B9C59A5",
+            "02F687DE5BBB",
+            "020C43D2B5C9"
+          ],
+          "os": "opnsense",
+          "icon": "opnsense.svg",
+          "status": 1,
+          "uptime": 71212,
+          "location": "Datacenter-2",
+          "hardware": "LENOVO 3135 [OPNsense 26.1.11_6 (amd64)]",
+          "sysName": "fw-01.demo.lan",
+          "totalInRate": 2995906,
+          "totalOutRate": 1729016,
+          "portCount": 27,
+          "overlayPorts": [
+            {
+              "ifName": "wg3",
+              "overlayType": "wireguard",
+              "ip": "10.200.41.113",
+              "ifInOctets_rate": 34597,
+              "ifOutOctets_rate": 42632,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "pppoe0",
+              "overlayType": "pptp",
+              "ip": "10.200.43.111",
+              "ifInOctets_rate": 867301,
+              "ifOutOctets_rate": 217402,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "zt1ocu1pr81cbq5",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.112",
+              "ifInOctets_rate": 2661,
+              "ifOutOctets_rate": 1563,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "tun30000",
+              "overlayType": "tunnel",
+              "ip": "10.200.44.56",
+              "ifInOctets_rate": 0,
+              "ifOutOctets_rate": 0,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.0.95",
+              "ifInOctets_rate": 3795,
+              "ifOutOctets_rate": 3315,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "10.200.45.49",
+              "prefix": 32,
+              "nextHop": "10.200.46.27",
+              "iface": "wg2",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.47.240",
+              "prefix": 32,
+              "nextHop": "10.200.48.73",
+              "iface": "wg3",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.6.101",
+              "prefix": 32,
+              "nextHop": "10.200.6.26",
+              "iface": "wg0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.45.49",
+              "prefix": 0,
+              "nextHop": "10.200.46.27",
+              "iface": "wg2",
+              "protocol": "netmgmt",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.47.240",
+              "prefix": 0,
+              "nextHop": "10.200.48.73",
+              "iface": "wg3",
+              "protocol": "netmgmt",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.6.101",
+              "prefix": 0,
+              "nextHop": "10.200.6.26",
+              "iface": "wg0",
+              "protocol": "netmgmt",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt1ocu1pr81cbq5",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.2.128",
+              "prefix": 24,
+              "nextHop": "10.200.9.11",
+              "iface": "zt1ocu1pr81cbq5",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.50.207",
+              "prefix": 32,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.51.166",
+              "prefix": 32,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.52.61",
+              "prefix": 32,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.53.180",
+              "prefix": 32,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.50.207",
+              "prefix": 0,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "netmgmt",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.51.166",
+              "prefix": 0,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "netmgmt",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.52.61",
+              "prefix": 0,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "netmgmt",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.53.180",
+              "prefix": 0,
+              "nextHop": "10.200.49.182",
+              "iface": "pppoe0",
+              "protocol": "netmgmt",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 1,
+          "hostname": "sw-01.demo.lan",
+          "displayName": "sw-01.demo.lan",
+          "ip": "10.200.34.28",
+          "lanIp": "10.200.34.28",
+          "ips": [
+            "10.200.54.80",
+            "10.200.34.28"
+          ],
+          "allIps": [
+            "10.200.54.80",
+            "10.200.34.28",
+            "10.200.55.247",
+            "127.0.0.1",
+            "2001:db8:51::aae2:5a95",
+            "2001:db8:52::3446:0539",
+            "2001:db8:53::7882:5e24",
+            "2001:db8:54::7782:82fc",
+            "2001:db8:55::45a5:71e0",
+            "2001:db8:56::6a06:2bf5"
+          ],
+          "macs": [
+            "021D3401A1BD",
+            "021C34000E94",
+            "021B33FE7B5B",
+            "021A33FCE8A2",
+            "021933FB5569",
+            "021833F9C2F0",
+            "02D033886A48",
+            "02CF3386D7AF",
+            "02CE33854466",
+            "02CD3383B14D",
+            "021E34033496"
+          ],
+          "os": "ciscosb",
+          "icon": "cisco.svg",
+          "status": 1,
+          "uptime": 4519904,
+          "location": "Datacenter-2",
+          "hardware": "SG350-10 V03",
+          "sysName": "sw-01.demo.lan",
+          "totalInRate": 1165011,
+          "totalOutRate": 2725511,
+          "portCount": 18,
+          "overlayPorts": []
+        },
+        {
+          "device_id": 8,
+          "hostname": "ap-01.demo.lan",
+          "displayName": "ap-01.demo.lan",
+          "ip": "10.200.34.147",
+          "lanIp": "10.200.34.147",
+          "ips": [
+            "10.200.34.147"
+          ],
+          "allIps": [
+            "10.200.34.147",
+            "127.0.0.1",
+            "2001:db8:57::d2de:a44b",
+            "2001:db8:53::7882:5e24",
+            "2001:db8:58::4917:eedc",
+            "2001:db8:43::ab1a:f02a"
+          ],
+          "macs": [
+            "02EFD397AEB4",
+            "02EAD38FCFB7",
+            "02E9D38E3CEE",
+            "02A1D31CE486",
+            "02A4D3219DA1",
+            "02A3D3200AE8",
+            "029ED3182B4B",
+            "029DD31698D2",
+            "02F0D399415D"
+          ],
+          "os": "linksys-ss",
+          "icon": "linksys.png",
+          "status": 1,
+          "uptime": 2013456,
+          "location": "Datacenter-2",
+          "hardware": "LGS308P V02",
+          "sysName": "ap-01.demo.lan",
+          "totalInRate": 274612,
+          "totalOutRate": 421527,
+          "portCount": 15,
+          "overlayPorts": [],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.34.210",
+              "iface": "1",
+              "protocol": "netmgmt",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 13,
+          "hostname": "nas-01.demo.lan",
+          "displayName": "nas-01.demo.lan",
+          "ip": "10.200.34.9",
+          "lanIp": "10.200.34.9",
+          "ips": [
+            "10.200.34.9",
+            "10.200.38.185"
+          ],
+          "allIps": [
+            "10.200.34.9",
+            "10.200.38.185",
+            "127.0.0.1",
+            "10.200.56.139",
+            "2001:db8:43::a3b3:ecbf",
+            "2001:db8:59::f49a:b394",
+            "2001:db8:60::b339:c5ef"
+          ],
+          "macs": [
+            "0268A1387303",
+            "0269A13A069C",
+            "028618B1C353"
+          ],
+          "os": "dsm",
+          "icon": "synology.svg",
+          "status": 1,
+          "uptime": 1992451,
+          "location": "Datacenter-2",
+          "hardware": "DS918+",
+          "sysName": "nas-01.demo.lan",
+          "totalInRate": 29974,
+          "totalOutRate": 30353,
+          "portCount": 6,
+          "overlayPorts": [],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.38.78",
+              "iface": "eth2.50",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 20,
+          "hostname": "printer-01.demo.lan",
+          "displayName": "printer-01.demo.lan",
+          "ip": "10.200.34.230",
+          "lanIp": "10.200.34.230",
+          "ips": [
+            "10.200.34.230"
+          ],
+          "allIps": [
+            "10.200.34.230"
+          ],
+          "macs": [
+            "02B226CA6A48",
+            "024BD35C760C",
+            "02C0EC4CCD11"
+          ],
+          "os": "brother",
+          "icon": "brother.svg",
+          "status": 1,
+          "uptime": 3716560,
+          "location": "Datacenter-2",
+          "hardware": "MFC-T920DW",
+          "sysName": "printer-01.demo.lan",
+          "totalInRate": 5414,
+          "totalOutRate": 759,
+          "portCount": 4,
+          "overlayPorts": [],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "0.0.0.0",
+              "iface": "NC-450w",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.55.128",
+              "prefix": 16,
+              "nextHop": "0.0.0.0",
+              "iface": "NC-450w",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 41,
+          "hostname": "nas-02.demo.lan",
+          "displayName": "nas-02.demo.lan",
+          "ip": "10.200.34.81",
+          "lanIp": "10.200.34.81",
+          "ips": [
+            "10.200.34.81",
+            "10.200.38.209"
+          ],
+          "allIps": [
+            "10.200.34.81",
+            "10.200.38.209",
+            "127.0.0.1",
+            "10.200.57.142",
+            "2001:db8:43::fa60:d835",
+            "2001:db8:59::fe7b:8e44",
+            "2001:db8:61::e055:9858"
+          ],
+          "macs": [
+            "025E6B6DE67C",
+            "025D6B6C5363",
+            "028A0B4569F5"
+          ],
+          "os": "dsm",
+          "icon": "synology.svg",
+          "status": 1,
+          "uptime": 1991794,
+          "location": "Datacenter-2",
+          "hardware": "DS918+",
+          "sysName": "nas-02.demo.lan",
+          "totalInRate": 23242,
+          "totalOutRate": 8668,
+          "portCount": 6,
+          "overlayPorts": [],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.38.78",
+              "iface": "eth2.50",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 15,
+          "hostname": "hv-01.demo.lan",
+          "displayName": "hv-01.demo.lan",
+          "ip": "10.200.34.100",
+          "lanIp": "10.200.34.100",
+          "ips": [
+            "10.200.34.100"
+          ],
+          "allIps": [
+            "10.200.34.100",
+            "127.0.0.1",
+            "2001:db8:63::a895:bef0",
+            "2001:db8:64::2b69:ed5b"
+          ],
+          "macs": [
+            "0238643ADB3B",
+            "02B8B1B7AC5E",
+            "02E94F34D925",
+            "02422D71FC2E",
+            "02694BAF760C",
+            "0263FE586822",
+            "025411FDB05A",
+            "02C2759543D3",
+            "02B33CC7B2E0",
+            "029D2F8CEE74",
+            "02293E2978B2",
+            "0253AC6CE67C",
+            "02803C5F9F47",
+            "02BC22B96D31",
+            "02A1FF7047DF",
+            "0216EBB9F383",
+            "0282B7BFB905",
+            "0292FEDB5C0E",
+            "023CF0A9D925"
+          ],
+          "os": "proxmox",
+          "icon": "proxmox.svg",
+          "status": 1,
+          "uptime": 1987320,
+          "location": "Datacenter-2",
+          "hardware": "LENOVO 11CR0048CK",
+          "sysName": "hv-01.demo.lan",
+          "totalInRate": 277341,
+          "totalOutRate": 276097,
+          "portCount": 36,
+          "overlayPorts": [
+            {
+              "ifName": "tap116i0",
+              "overlayType": "tap",
+              "ip": "",
+              "ifInOctets_rate": 2077,
+              "ifOutOctets_rate": 42339,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.34.210",
+              "iface": "vmbr2",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 50,
+          "hostname": "hv-02.demo.lan",
+          "displayName": "hv-02.demo.lan",
+          "ip": "10.200.34.88",
+          "lanIp": "10.200.34.88",
+          "ips": [
+            "10.200.34.88",
+            "2001:db8:49::8cc6:520a",
+            "2001:db8:49::0722:4737"
+          ],
+          "allIps": [
+            "10.200.34.88",
+            "2001:db8:49::8cc6:520a",
+            "2001:db8:49::0722:4737",
+            "127.0.0.1",
+            "2001:db8:65::5bb8:fd97",
+            "2001:db8:63::a35e:dde8",
+            "2001:db8:65::ed2c:ba9b",
+            "2001:db8:64::2569:d854"
+          ],
+          "macs": [
+            "023E64444D91",
+            "029B191B9323",
+            "022143ED861C",
+            "0240B70731CD",
+            "027DBA263260",
+            "02F1EEBB5F87",
+            "02BE75F0F383",
+            "02DEA3114AA8",
+            "02125E442935",
+            "02272AC18CBE",
+            "0243B6BE5BBB",
+            "027E20336EF4",
+            "025C77D0CD11",
+            "0219D1C29476",
+            "0278B956D436",
+            "021E3B263EC4",
+            "02A22238103A",
+            "02B54433D925",
+            "02C0A6EA7D81",
+            "0255DDF4ADF1",
+            "02424FD95363",
+            "02089036A2D0",
+            "022A17443343"
+          ],
+          "os": "proxmox",
+          "icon": "proxmox.svg",
+          "status": 1,
+          "uptime": 1987424,
+          "location": "Datacenter-2",
+          "hardware": "LENOVO 11CR0048CK",
+          "sysName": "hv-02.demo.lan",
+          "totalInRate": 563307,
+          "totalOutRate": 205724,
+          "portCount": 42,
+          "overlayPorts": [
+            {
+              "ifName": "tap101i1",
+              "overlayType": "tap",
+              "ip": "",
+              "ifInOctets_rate": 318,
+              "ifOutOctets_rate": 12903,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.34.210",
+              "iface": "vmbr2",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 22,
+          "hostname": "hv-03.demo.lan",
+          "displayName": "hv-03.demo.lan",
+          "ip": "10.200.34.183",
+          "lanIp": "10.200.34.183",
+          "ips": [
+            "10.200.34.183"
+          ],
+          "allIps": [
+            "10.200.34.183",
+            "127.0.0.1",
+            "2001:db8:63::9060:1b10",
+            "2001:db8:66::93b3:96fb"
+          ],
+          "macs": [
+            "0291B0A2D07A",
+            "029E16E1B5C9",
+            "02D49FD76B0B",
+            "022F2AE7F589",
+            "02E82F9FC9D5",
+            "02D50CB108C2"
+          ],
+          "os": "proxmox",
+          "icon": "proxmox.svg",
+          "status": 1,
+          "uptime": 1987305,
+          "location": "Datacenter-2",
+          "hardware": "LENOVO 11CR0048CK",
+          "sysName": "hv-03.demo.lan",
+          "totalInRate": 197563,
+          "totalOutRate": 211561,
+          "portCount": 15,
+          "overlayPorts": [
+            {
+              "ifName": "tap129i0",
+              "overlayType": "tap",
+              "ip": "",
+              "ifInOctets_rate": 172,
+              "ifOutOctets_rate": 12230,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.34.210",
+              "iface": "vmbr2",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 45,
+          "hostname": "srv-10.demo.lan",
+          "displayName": "srv-10.demo.lan",
+          "ip": "10.200.34.64",
+          "lanIp": "10.200.34.64",
+          "ips": [
+            "10.200.34.64",
+            "10.200.38.120"
+          ],
+          "allIps": [
+            "10.200.34.64",
+            "10.200.38.120",
+            "127.0.0.1",
+            "10.200.58.249",
+            "10.200.59.188",
+            "2001:db8:67::72f5:1d5a",
+            "2001:db8:43::3826:98b4",
+            "2001:db8:68::ecdb:efe5",
+            "2001:db8:69::a7c6:3034"
+          ],
+          "macs": [
+            "02CA8885CA28",
+            "02F1D98404A6",
+            "0256C03D50FA"
+          ],
+          "os": "linux",
+          "icon": "debian.svg",
+          "status": 1,
+          "uptime": 2005905,
+          "location": "Datacenter-2",
+          "hardware": "Iomega Corporation StorCenter Pro xxxx",
+          "sysName": "srv-10.demo.lan",
+          "totalInRate": 40382,
+          "totalOutRate": 2310,
+          "portCount": 7,
+          "overlayPorts": [],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.34.210",
+              "iface": "bond0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.38.78",
+              "iface": "bond0.50",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        },
+        {
+          "device_id": 53,
+          "hostname": "rtr-04.demo.lan",
+          "displayName": "rtr-04.demo.lan",
+          "ip": "10.200.34.198",
+          "lanIp": "10.200.34.198",
+          "ips": [
+            "10.200.36.234",
+            "10.200.38.90",
+            "10.200.34.198",
+            "10.200.37.101"
+          ],
+          "allIps": [
+            "10.200.36.234",
+            "10.200.38.90",
+            "10.200.34.198",
+            "10.200.37.101",
+            "127.0.0.1",
+            "2001:db8:70::a9f7:7b44"
+          ],
+          "macs": [
+            "0244728B9DA1",
+            "028972F83CEE",
+            "028A72F9CFB7",
+            "028C72FCF589"
+          ],
+          "os": "openwrt",
+          "icon": "openwrt.svg",
+          "status": 1,
+          "uptime": 1037991,
+          "location": "Datacenter-2",
+          "hardware": "Linksys MX5300",
+          "sysName": "rtr-04.demo.lan",
+          "totalInRate": 89659,
+          "totalOutRate": 101241,
+          "portCount": 19,
+          "overlayPorts": [],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.34.210",
+              "iface": "br-lan",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "branch-north",
+      "location": "Branch-North",
+      "lat": null,
+      "lng": null,
+      "devices": [
+        {
+          "device_id": 19,
+          "hostname": "srv-11.demo.lan",
+          "displayName": "srv-11.demo.lan",
+          "ip": "10.200.9.160",
+          "lanIp": "10.200.2.249",
+          "ips": [
+            "10.200.2.249",
+            "10.200.2.34",
+            "2001:db8:71::28fe:1930",
+            "2001:db8:71::23b1:a58a"
+          ],
+          "allIps": [
+            "10.200.2.249",
+            "10.200.2.34",
+            "2001:db8:71::28fe:1930",
+            "2001:db8:71::23b1:a58a",
+            "127.0.0.1",
+            "10.200.60.78",
+            "10.200.9.160",
+            "10.200.9.148",
+            "10.200.9.5",
+            "10.200.6.44",
+            "10.200.18.107",
+            "2001:db8:72::42f6:b6aa",
+            "2001:db8:73::e6f8:ba3b",
+            "2001:db8:6::740c:aa6c",
+            "2001:db8:74::e13f:e6f2",
+            "2001:db8:10::6247:f77a",
+            "2001:db8:75::939b:c023",
+            "2001:db8:2::701b:31ab",
+            "2001:db8:17::0dd5:79fe"
+          ],
+          "macs": [
+            "025BA4FF38F2",
+            "02E57CB7B3C3",
+            "02E2EEEBD200"
+          ],
+          "os": "linux",
+          "icon": "raspbian.svg",
+          "status": 1,
+          "uptime": 137485,
+          "location": "Branch-North",
+          "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+          "sysName": "srv-11.demo.lan",
+          "totalInRate": 3627,
+          "totalOutRate": 5029,
+          "portCount": 7,
+          "overlayPorts": [
+            {
+              "ifName": "tailscale0",
+              "overlayType": "tailscale",
+              "ip": "10.200.60.78",
+              "ifInOctets_rate": 0,
+              "ifOutOctets_rate": 0,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "zt2lr5pymv",
+              "overlayType": "zerotier",
+              "ip": "10.200.9.5",
+              "ifInOctets_rate": 309,
+              "ifOutOctets_rate": 1156,
+              "ifOperStatus": "up"
+            },
+            {
+              "ifName": "wg0",
+              "overlayType": "wireguard",
+              "ip": "10.200.6.44",
+              "ifInOctets_rate": 1,
+              "ifOutOctets_rate": 3,
+              "ifOperStatus": "up"
+            }
+          ],
+          "routes": [
+            {
+              "dest": "0.0.0.0",
+              "prefix": 0,
+              "nextHop": "10.200.2.247",
+              "iface": "eth0",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.13.49",
+              "prefix": 16,
+              "nextHop": "10.200.9.243",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.2.128",
+              "prefix": 24,
+              "nextHop": "10.200.9.11",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.15.125",
+              "prefix": 23,
+              "nextHop": "10.200.9.112",
+              "iface": "zt2lr5pymv",
+              "protocol": "local",
+              "type": "remote"
+            },
+            {
+              "dest": "10.200.14.82",
+              "prefix": 23,
+              "nextHop": "10.200.18.116",
+              "iface": "wg1",
+              "protocol": "local",
+              "type": "remote"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "overlayType": "wireguard",
+      "subnet": "10.200.6.232/24",
+      "color": "#dc2626",
+      "label": "WireGuard (10.200.6.232/24)",
+      "topology": "hub-spoke",
+      "hub": "srv-05.demo.lan",
+      "links": [
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.6.232/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-04.demo.lan",
+          "fromIp": "10.200.6.101",
+          "toIp": "10.200.6.187",
+          "fromIface": "wghub",
+          "toIface": "wg0"
+        },
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.6.232/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-06.demo.lan",
+          "fromIp": "10.200.6.101",
+          "toIp": "10.200.6.240",
+          "fromIface": "wghub",
+          "toIface": "wg0"
+        },
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.6.232/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.6.101",
+          "toIp": "10.200.6.44",
+          "fromIface": "wghub",
+          "toIface": "wg0"
+        },
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.6.232/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.6.101",
+          "toIp": "10.200.6.127",
+          "fromIface": "wghub",
+          "toIface": "wg0"
+        },
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.6.232/24",
+          "from": "srv-05.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.6.101",
+          "toIp": "10.200.6.11",
+          "fromIface": "wghub",
+          "toIface": "wg0"
+        }
+      ]
+    },
+    {
+      "overlayType": "zerotier",
+      "subnet": "10.200.9.124/24",
+      "color": "#9333ea",
+      "label": "ZeroTier (10.200.9.124/24)",
+      "topology": "mesh",
+      "links": [
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "srv-05.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.243",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "srv-06.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.68",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "srv-09.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.171",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "rtr-02.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.82",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.5",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.41",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.193",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-04.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.142",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-06.demo.lan",
+          "fromIp": "10.200.9.243",
+          "toIp": "10.200.9.68",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-09.demo.lan",
+          "fromIp": "10.200.9.243",
+          "toIp": "10.200.9.171",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-05.demo.lan",
+          "to": "rtr-02.demo.lan",
+          "fromIp": "10.200.9.243",
+          "toIp": "10.200.9.82",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.9.243",
+          "toIp": "10.200.9.5",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.9.243",
+          "toIp": "10.200.9.41",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-05.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.9.243",
+          "toIp": "10.200.9.193",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-05.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.243",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-06.demo.lan",
+          "to": "srv-09.demo.lan",
+          "fromIp": "10.200.9.68",
+          "toIp": "10.200.9.171",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-06.demo.lan",
+          "to": "rtr-02.demo.lan",
+          "fromIp": "10.200.9.68",
+          "toIp": "10.200.9.82",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-06.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.9.68",
+          "toIp": "10.200.9.5",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-06.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.9.68",
+          "toIp": "10.200.9.41",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-06.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.9.68",
+          "toIp": "10.200.9.193",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-06.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.68",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-09.demo.lan",
+          "to": "rtr-02.demo.lan",
+          "fromIp": "10.200.9.171",
+          "toIp": "10.200.9.82",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-09.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.9.171",
+          "toIp": "10.200.9.5",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-09.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.9.171",
+          "toIp": "10.200.9.41",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-09.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.9.171",
+          "toIp": "10.200.9.193",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-09.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.171",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "rtr-02.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.9.82",
+          "toIp": "10.200.9.5",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "rtr-02.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.9.82",
+          "toIp": "10.200.9.41",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "rtr-02.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.9.82",
+          "toIp": "10.200.9.193",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "rtr-02.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.82",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-11.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.9.5",
+          "toIp": "10.200.9.41",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-11.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.9.5",
+          "toIp": "10.200.9.193",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-11.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.5",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-07.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.9.41",
+          "toIp": "10.200.9.193",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt2lr5pymv"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-07.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.41",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        },
+        {
+          "overlayType": "zerotier",
+          "subnet": "10.200.9.124/24",
+          "from": "srv-08.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.9.193",
+          "toIp": "10.200.9.112",
+          "fromIface": "zt2lr5pymv",
+          "toIface": "zt1ocu1pr81cbq5"
+        }
+      ]
+    },
+    {
+      "overlayType": "wireguard",
+      "subnet": "10.200.18.235/24",
+      "color": "#dc2626",
+      "label": "WireGuard (10.200.18.235/24)",
+      "topology": "hub-spoke",
+      "hub": "fw-01.demo.lan",
+      "links": [
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.18.235/24",
+          "from": "fw-01.demo.lan",
+          "to": "srv-04.demo.lan",
+          "fromIp": "10.200.18.116",
+          "toIp": "10.200.18.238",
+          "fromIface": "wg1",
+          "toIface": "wg1"
+        },
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.18.235/24",
+          "from": "fw-01.demo.lan",
+          "to": "srv-05.demo.lan",
+          "fromIp": "10.200.18.116",
+          "toIp": "10.200.18.24",
+          "fromIface": "wg1",
+          "toIface": "wg1"
+        },
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.18.235/24",
+          "from": "fw-01.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.18.116",
+          "toIp": "10.200.18.107",
+          "fromIface": "wg1",
+          "toIface": "wg1"
+        },
+        {
+          "overlayType": "wireguard",
+          "subnet": "10.200.18.235/24",
+          "from": "fw-01.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.18.116",
+          "toIp": "10.200.18.143",
+          "fromIface": "wg1",
+          "toIface": "wg1"
+        }
+      ]
+    },
+    {
+      "overlayType": "tailscale",
+      "subnet": "10.200.48.204/10",
+      "color": "#06b6d4",
+      "label": "Tailscale (10.200.48.204/10)",
+      "topology": "mesh",
+      "links": [
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-04.demo.lan",
+          "to": "srv-05.demo.lan",
+          "fromIp": "10.200.17.57",
+          "toIp": "10.200.23.173",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-04.demo.lan",
+          "to": "srv-06.demo.lan",
+          "fromIp": "10.200.17.57",
+          "toIp": "10.200.26.237",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-04.demo.lan",
+          "to": "srv-09.demo.lan",
+          "fromIp": "10.200.17.57",
+          "toIp": "10.200.35.205",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-04.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.17.57",
+          "toIp": "10.200.60.78",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-04.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.17.57",
+          "toIp": "10.200.32.20",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-04.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.17.57",
+          "toIp": "10.200.33.30",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-04.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.17.57",
+          "toIp": "10.200.41.113",
+          "fromIface": "tailscale0",
+          "toIface": "wg3"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-05.demo.lan",
+          "to": "srv-06.demo.lan",
+          "fromIp": "10.200.23.173",
+          "toIp": "10.200.26.237",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-05.demo.lan",
+          "to": "srv-09.demo.lan",
+          "fromIp": "10.200.23.173",
+          "toIp": "10.200.35.205",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-05.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.23.173",
+          "toIp": "10.200.60.78",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-05.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.23.173",
+          "toIp": "10.200.32.20",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-05.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.23.173",
+          "toIp": "10.200.33.30",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-05.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.23.173",
+          "toIp": "10.200.41.113",
+          "fromIface": "tailscale0",
+          "toIface": "wg3"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-06.demo.lan",
+          "to": "srv-09.demo.lan",
+          "fromIp": "10.200.26.237",
+          "toIp": "10.200.35.205",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-06.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.26.237",
+          "toIp": "10.200.60.78",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-06.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.26.237",
+          "toIp": "10.200.32.20",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-06.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.26.237",
+          "toIp": "10.200.33.30",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-06.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.26.237",
+          "toIp": "10.200.41.113",
+          "fromIface": "tailscale0",
+          "toIface": "wg3"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-09.demo.lan",
+          "to": "srv-11.demo.lan",
+          "fromIp": "10.200.35.205",
+          "toIp": "10.200.60.78",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-09.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.35.205",
+          "toIp": "10.200.32.20",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-09.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.35.205",
+          "toIp": "10.200.33.30",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-09.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.35.205",
+          "toIp": "10.200.41.113",
+          "fromIface": "tailscale0",
+          "toIface": "wg3"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-11.demo.lan",
+          "to": "srv-07.demo.lan",
+          "fromIp": "10.200.60.78",
+          "toIp": "10.200.32.20",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-11.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.60.78",
+          "toIp": "10.200.33.30",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-11.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.60.78",
+          "toIp": "10.200.41.113",
+          "fromIface": "tailscale0",
+          "toIface": "wg3"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-07.demo.lan",
+          "to": "srv-08.demo.lan",
+          "fromIp": "10.200.32.20",
+          "toIp": "10.200.33.30",
+          "fromIface": "tailscale0",
+          "toIface": "tailscale0"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-07.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.32.20",
+          "toIp": "10.200.41.113",
+          "fromIface": "tailscale0",
+          "toIface": "wg3"
+        },
+        {
+          "overlayType": "tailscale",
+          "subnet": "10.200.48.204/10",
+          "from": "srv-08.demo.lan",
+          "to": "fw-01.demo.lan",
+          "fromIp": "10.200.33.30",
+          "toIp": "10.200.41.113",
+          "fromIface": "tailscale0",
+          "toIface": "wg3"
+        }
+      ]
+    }
+  ],
+  "neighbors": [
+    {
+      "id": 87,
+      "localDeviceId": 8,
+      "localHostname": "ap-01.demo.lan",
+      "localPort": "gi3",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "eno1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 297,
+      "localDeviceId": 1,
+      "localHostname": "sw-01.demo.lan",
+      "localPort": "gi3",
+      "remoteDeviceId": 8,
+      "remoteHostname": "ap-01.demo.lan",
+      "remotePort": "gi1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 363,
+      "localDeviceId": 5,
+      "localHostname": "fw-01.demo.lan",
+      "localPort": "igb2",
+      "remoteDeviceId": 1,
+      "remoteHostname": "sw-01.demo.lan",
+      "remotePort": "gi7",
+      "protocol": "lldp"
+    },
+    {
+      "id": 598,
+      "localDeviceId": 46,
+      "localHostname": "srv-06.demo.lan",
+      "localPort": "eno2",
+      "remoteDeviceId": 49,
+      "remoteHostname": "rtr-02.demo.lan",
+      "remotePort": "br-lan",
+      "protocol": "lldp"
+    },
+    {
+      "id": 816,
+      "localDeviceId": 8,
+      "localHostname": "ap-01.demo.lan",
+      "localPort": "gi5",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "eno1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 891,
+      "localDeviceId": 1,
+      "localHostname": "sw-01.demo.lan",
+      "localPort": "gi6",
+      "remoteDeviceId": 5,
+      "remoteHostname": "fw-01.demo.lan",
+      "remotePort": "igb1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 1079,
+      "localDeviceId": 37,
+      "localHostname": "srv-02.demo.lan",
+      "localPort": "port-117118",
+      "remoteDeviceId": 29,
+      "remoteHostname": "srv-03.demo.lan",
+      "remotePort": "B8 27 EB AF 4B B8",
+      "protocol": "lldp"
+    },
+    {
+      "id": 1622,
+      "localDeviceId": 46,
+      "localHostname": "srv-06.demo.lan",
+      "localPort": "eno2",
+      "remoteDeviceId": 46,
+      "remoteHostname": "srv-06.demo.lan",
+      "remotePort": "wlo1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 1994,
+      "localDeviceId": 22,
+      "localHostname": "hv-03.demo.lan",
+      "localPort": "eno1",
+      "remoteDeviceId": 8,
+      "remoteHostname": "ap-01.demo.lan",
+      "remotePort": "gi4",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2635,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr121p0",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln121i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2637,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr121p1",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln121i1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2639,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr121p2",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln121i2",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2642,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr118p0",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln118i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2644,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr120p0",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln120i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2646,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr120p1",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln120i1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2648,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr120p2",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln120i2",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2650,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "fwpr130p0",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "fwln130i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2665,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr102p0",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln102i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2667,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr102p1",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln102i1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2669,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr108p0",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln108i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2671,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr111p0",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln111i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2673,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr119p0",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln119i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2675,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr119p1",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln119i1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2677,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr138p0",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln138i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2679,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr141p0",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln141i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2681,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr141p2",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln141i2",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2683,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "fwpr142p0",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "fwln142i0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2719,
+      "localDeviceId": 8,
+      "localHostname": "ap-01.demo.lan",
+      "localPort": "gi2",
+      "remoteDeviceId": 45,
+      "remoteHostname": "srv-10.demo.lan",
+      "remotePort": "enp3s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2802,
+      "localDeviceId": 8,
+      "localHostname": "ap-01.demo.lan",
+      "localPort": "gi2",
+      "remoteDeviceId": 45,
+      "remoteHostname": "srv-10.demo.lan",
+      "remotePort": "enp4s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2803,
+      "localDeviceId": 53,
+      "localHostname": "rtr-04.demo.lan",
+      "localPort": "br-lan",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2807,
+      "localDeviceId": 53,
+      "localHostname": "rtr-04.demo.lan",
+      "localPort": "br-lan",
+      "remoteDeviceId": 1,
+      "remoteHostname": "sw-01.demo.lan",
+      "remotePort": "gi3",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2821,
+      "localDeviceId": 8,
+      "localHostname": "ap-01.demo.lan",
+      "localPort": "gi2",
+      "remoteDeviceId": 22,
+      "remoteHostname": "hv-03.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2847,
+      "localDeviceId": 46,
+      "localHostname": "srv-06.demo.lan",
+      "localPort": "wlo1",
+      "remoteDeviceId": 49,
+      "remoteHostname": "rtr-02.demo.lan",
+      "remotePort": "br-lan",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2875,
+      "localDeviceId": 53,
+      "localHostname": "rtr-04.demo.lan",
+      "localPort": "br-lan",
+      "remoteDeviceId": 50,
+      "remoteHostname": "hv-02.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2883,
+      "localDeviceId": 22,
+      "localHostname": "hv-03.demo.lan",
+      "localPort": "enp2s0",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2888,
+      "localDeviceId": 8,
+      "localHostname": "ap-01.demo.lan",
+      "localPort": "gi2",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2892,
+      "localDeviceId": 53,
+      "localHostname": "rtr-04.demo.lan",
+      "localPort": "br-lan",
+      "remoteDeviceId": 45,
+      "remoteHostname": "srv-10.demo.lan",
+      "remotePort": "enp4s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2925,
+      "localDeviceId": 22,
+      "localHostname": "hv-03.demo.lan",
+      "localPort": "enp2s0",
+      "remoteDeviceId": 45,
+      "remoteHostname": "srv-10.demo.lan",
+      "remotePort": "enp4s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2927,
+      "localDeviceId": 5,
+      "localHostname": "fw-01.demo.lan",
+      "localPort": "igb1",
+      "remoteDeviceId": 5,
+      "remoteHostname": "fw-01.demo.lan",
+      "remotePort": "igb1",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2931,
+      "localDeviceId": 15,
+      "localHostname": "hv-01.demo.lan",
+      "localPort": "enp2s0",
+      "remoteDeviceId": 45,
+      "remoteHostname": "srv-10.demo.lan",
+      "remotePort": "enp4s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2932,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "enp2s0",
+      "remoteDeviceId": 1,
+      "remoteHostname": "sw-01.demo.lan",
+      "remotePort": "gi3",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2934,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "enp2s0",
+      "remoteDeviceId": 45,
+      "remoteHostname": "srv-10.demo.lan",
+      "remotePort": "enp4s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2935,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "enp2s0",
+      "remoteDeviceId": 15,
+      "remoteHostname": "hv-01.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2936,
+      "localDeviceId": 50,
+      "localHostname": "hv-02.demo.lan",
+      "localPort": "enp2s0",
+      "remoteDeviceId": 22,
+      "remoteHostname": "hv-03.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    },
+    {
+      "id": 2939,
+      "localDeviceId": 53,
+      "localHostname": "rtr-04.demo.lan",
+      "localPort": "br-lan",
+      "remoteDeviceId": 22,
+      "remoteHostname": "hv-03.demo.lan",
+      "remotePort": "enp2s0",
+      "protocol": "lldp"
+    }
+  ],
+  "arpLinks": [
+    {
+      "fromHostname": "srv-04.demo.lan",
+      "toHostname": "srv-03.demo.lan",
+      "fromIp": "10.200.2.165",
+      "toIp": "10.200.16.171",
+      "mac": "02d3cbcdb78f",
+      "fromInterface": "eth0",
+      "fromMac": "029417E7019D",
+      "sourceDown": true
+    },
+    {
+      "fromHostname": "srv-04.demo.lan",
+      "toHostname": "srv-02.demo.lan",
+      "fromIp": "10.200.2.165",
+      "toIp": "10.200.0.203",
+      "mac": "02d3cbcdb78f",
+      "fromInterface": "eth0",
+      "fromMac": "029417E7019D",
+      "sourceDown": true
+    },
+    {
+      "fromHostname": "srv-04.demo.lan",
+      "toHostname": "device-01.demo.lan",
+      "fromIp": "10.200.2.165",
+      "toIp": "10.200.2.247",
+      "mac": "029417e7019d",
+      "fromInterface": "eth0",
+      "fromMac": "029417E7019D",
+      "toInterface": "br0",
+      "toMac": "027B7A14B2E0",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "srv-06.demo.lan",
+      "toHostname": "rtr-02.demo.lan",
+      "fromIp": "10.200.2.28",
+      "toIp": "10.200.2.247",
+      "mac": "02e5c6396fd7",
+      "fromInterface": "eno2",
+      "fromMac": "02E5C6396FD7",
+      "toInterface": "br-lan",
+      "toMac": "02C37718A2D0",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "srv-09.demo.lan",
+      "toHostname": "fw-01.demo.lan",
+      "fromIp": "10.200.34.195",
+      "toIp": "10.200.34.210",
+      "mac": "02e94df86822",
+      "fromInterface": "eth0",
+      "fromMac": "02E94DF86822",
+      "toInterface": "igb1",
+      "toMac": "02582B993343",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "srv-09.demo.lan",
+      "toHostname": "nas-01.demo.lan",
+      "fromIp": "10.200.34.195",
+      "toIp": "10.200.34.9",
+      "mac": "02e94df86822",
+      "fromInterface": "eth0",
+      "fromMac": "02E94DF86822",
+      "toInterface": "eth0",
+      "toMac": "0268A1387303",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "srv-09.demo.lan",
+      "toHostname": "nas-02.demo.lan",
+      "fromIp": "10.200.34.195",
+      "toIp": "10.200.34.81",
+      "mac": "02e94df86822",
+      "fromInterface": "eth0",
+      "fromMac": "02E94DF86822",
+      "toInterface": "eth0",
+      "toMac": "025E6B6DE67C",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "srv-09.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.195",
+      "toIp": "10.200.34.198",
+      "mac": "02e94df86822",
+      "fromInterface": "eth0",
+      "fromMac": "02E94DF86822",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "srv-07.demo.lan",
+      "toHostname": "srv-08.demo.lan",
+      "fromIp": "10.200.22.14",
+      "toIp": "10.200.22.120",
+      "mac": "029529430f77",
+      "fromInterface": "eth0",
+      "fromMac": "029529430F77",
+      "toInterface": "eth0",
+      "toMac": "0206FAF56B0B",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "sw-01.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.28",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "1",
+      "toMac": "021E34033496",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "printer-01.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.230",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "NC-450w",
+      "toMac": "024BD35C760C",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "ap-01.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.147",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "1",
+      "toMac": "02F0D399415D",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "hv-03.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.183",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "vmbr2",
+      "toMac": "029E16E1B5C9",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "srv-10.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.64",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "bond0",
+      "toMac": "02CA8885CA28",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.198",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "nas-01.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.9",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "eth0",
+      "toMac": "0268A1387303",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "nas-02.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.81",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "eth0",
+      "toMac": "025E6B6DE67C",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "hv-02.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.88",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "vmbr2",
+      "toMac": "029B191B9323",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "fw-01.demo.lan",
+      "toHostname": "hv-01.demo.lan",
+      "fromIp": "10.200.34.210",
+      "toIp": "10.200.34.100",
+      "mac": "02582b993343",
+      "fromInterface": "igb1",
+      "fromMac": "02582B993343",
+      "toInterface": "vmbr2",
+      "toMac": "02B8B1B7AC5E",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "sw-01.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.28",
+      "toIp": "10.200.34.198",
+      "mac": "021e34033496",
+      "fromInterface": "1",
+      "fromMac": "021E34033496",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "ap-01.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.147",
+      "toIp": "10.200.34.198",
+      "mac": "02f0d399415d",
+      "fromInterface": "1",
+      "fromMac": "02F0D399415D",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "nas-01.demo.lan",
+      "toHostname": "srv-10.demo.lan",
+      "fromIp": "10.200.34.9",
+      "toIp": "10.200.34.64",
+      "mac": "0268a1387303",
+      "fromInterface": "eth0",
+      "fromMac": "0268A1387303",
+      "toInterface": "bond0",
+      "toMac": "02CA8885CA28",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "nas-01.demo.lan",
+      "toHostname": "hv-01.demo.lan",
+      "fromIp": "10.200.34.9",
+      "toIp": "10.200.34.100",
+      "mac": "0268a1387303",
+      "fromInterface": "eth0",
+      "fromMac": "0268A1387303",
+      "toInterface": "vmbr2",
+      "toMac": "02B8B1B7AC5E",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "nas-01.demo.lan",
+      "toHostname": "nas-02.demo.lan",
+      "fromIp": "10.200.34.9",
+      "toIp": "10.200.34.81",
+      "mac": "0268a1387303",
+      "fromInterface": "eth0",
+      "fromMac": "0268A1387303",
+      "toInterface": "eth0",
+      "toMac": "025E6B6DE67C",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "nas-01.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.9",
+      "toIp": "10.200.34.198",
+      "mac": "0268a1387303",
+      "fromInterface": "eth0",
+      "fromMac": "0268A1387303",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "printer-01.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.230",
+      "toIp": "10.200.34.198",
+      "mac": "02b226ca6a48",
+      "fromInterface": "NC-440h",
+      "fromMac": "02B226CA6A48",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "nas-02.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.81",
+      "toIp": "10.200.34.198",
+      "mac": "025e6b6de67c",
+      "fromInterface": "eth0",
+      "fromMac": "025E6B6DE67C",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-01.demo.lan",
+      "toHostname": "hv-03.demo.lan",
+      "fromIp": "10.200.34.100",
+      "toIp": "10.200.34.183",
+      "mac": "02b8b1b7ac5e",
+      "fromInterface": "vmbr2",
+      "fromMac": "02B8B1B7AC5E",
+      "toInterface": "vmbr2",
+      "toMac": "029E16E1B5C9",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-01.demo.lan",
+      "toHostname": "hv-02.demo.lan",
+      "fromIp": "10.200.34.100",
+      "toIp": "10.200.34.88",
+      "mac": "02b8b1b7ac5e",
+      "fromInterface": "vmbr2",
+      "fromMac": "02B8B1B7AC5E",
+      "toInterface": "vmbr2",
+      "toMac": "029B191B9323",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-01.demo.lan",
+      "toHostname": "nas-02.demo.lan",
+      "fromIp": "10.200.34.100",
+      "toIp": "10.200.34.81",
+      "mac": "02b8b1b7ac5e",
+      "fromInterface": "vmbr2",
+      "fromMac": "02B8B1B7AC5E",
+      "toInterface": "eth0",
+      "toMac": "025E6B6DE67C",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-01.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.100",
+      "toIp": "10.200.34.198",
+      "mac": "02b8b1b7ac5e",
+      "fromInterface": "vmbr2",
+      "fromMac": "02B8B1B7AC5E",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-02.demo.lan",
+      "toHostname": "hv-03.demo.lan",
+      "fromIp": "10.200.34.88",
+      "toIp": "10.200.34.183",
+      "mac": "029b191b9323",
+      "fromInterface": "vmbr2",
+      "fromMac": "029B191B9323",
+      "toInterface": "vmbr2",
+      "toMac": "029E16E1B5C9",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-02.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.88",
+      "toIp": "10.200.34.198",
+      "mac": "029b191b9323",
+      "fromInterface": "vmbr2",
+      "fromMac": "029B191B9323",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-03.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.183",
+      "toIp": "10.200.34.198",
+      "mac": "029e16e1b5c9",
+      "fromInterface": "vmbr2",
+      "fromMac": "029E16E1B5C9",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "srv-10.demo.lan",
+      "toHostname": "rtr-04.demo.lan",
+      "fromIp": "10.200.34.64",
+      "toIp": "10.200.34.198",
+      "mac": "02ca8885ca28",
+      "fromInterface": "bond0",
+      "fromMac": "02CA8885CA28",
+      "toInterface": "br-lan",
+      "toMac": "0244728B9DA1",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-02.demo.lan",
+      "toHostname": "srv-10.demo.lan",
+      "fromIp": "10.200.34.91",
+      "toIp": "10.200.34.64",
+      "mac": "029b191b9323",
+      "fromMac": "029B191B9323",
+      "toInterface": "bond0",
+      "toMac": "02CA8885CA28",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-01.demo.lan",
+      "toHostname": "srv-10.demo.lan",
+      "fromIp": "10.200.34.76",
+      "toIp": "10.200.34.64",
+      "mac": "02b8b1b7ac5e",
+      "fromMac": "02B8B1B7AC5E",
+      "toInterface": "bond0",
+      "toMac": "02CA8885CA28",
+      "sourceDown": false
+    },
+    {
+      "fromHostname": "hv-03.demo.lan",
+      "toHostname": "srv-10.demo.lan",
+      "fromIp": "10.200.34.186",
+      "toIp": "10.200.34.64",
+      "mac": "029e16e1b5c9",
+      "fromMac": "029E16E1B5C9",
+      "toInterface": "bond0",
+      "toMac": "02CA8885CA28",
+      "sourceDown": false
+    }
+  ],
+  "arpDevices": [
+    {
+      "mac": "027508F4EDB1",
+      "macs": [
+        "027508F4EDB1"
+      ],
+      "ips": [
+        "10.200.2.247"
+      ],
+      "vendor": "AERODEV",
+      "location": "Branch-North",
+      "siteId": "branch-north",
+      "seenByHostname": "srv-11.demo.lan",
+      "seenByInterface": "eth0",
+      "seenByIp": "10.200.2.249",
+      "seenByMac": "025BA4FF38F2",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "0208F722DD61",
+      "macs": [
+        "0208F722DD61"
+      ],
+      "ips": [
+        "10.200.2.141"
+      ],
+      "vendor": "Yahoo! JAPAN",
+      "location": "Branch-North",
+      "siteId": "branch-north",
+      "seenByHostname": "srv-11.demo.lan",
+      "seenByInterface": "eth0",
+      "seenByIp": "10.200.2.249",
+      "seenByMac": "025BA4FF38F2",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "021EC6FC3549",
+      "macs": [
+        "021EC6FC3549"
+      ],
+      "ips": [
+        "10.200.22.26"
+      ],
+      "vendor": "Online Corporation",
+      "location": "HQ",
+      "siteId": "hq",
+      "seenByHostname": "srv-02.demo.lan",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": true
+    },
+    {
+      "mac": "02D6FB360DD1",
+      "macs": [
+        "02D6FB360DD1"
+      ],
+      "ips": [
+        "10.200.2.118"
+      ],
+      "vendor": "SEAL AG",
+      "location": "HQ",
+      "siteId": "hq",
+      "seenByHostname": "device-01.demo.lan",
+      "seenByInterface": "br0",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "027B7A14B2E0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02D48DF34AA8",
+      "macs": [
+        "02D48DF34AA8"
+      ],
+      "ips": [
+        "10.200.2.129"
+      ],
+      "vendor": "CSIR",
+      "location": "HQ",
+      "siteId": "hq",
+      "seenByHostname": "device-01.demo.lan",
+      "seenByInterface": "br0",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "027B7A14B2E0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02F2DD82370F",
+      "macs": [
+        "02F2DD82370F"
+      ],
+      "ips": [
+        "10.200.2.34"
+      ],
+      "vendor": "NIC.br- Nucleo de Informacao e Coordenacao do Ponto BR",
+      "location": "HQ",
+      "siteId": "hq",
+      "seenByHostname": "srv-04.demo.lan",
+      "seenByInterface": "eth0",
+      "seenByIp": "10.200.2.165",
+      "seenByMac": "029417E7019D",
+      "firstSeen": "2026-07-05T12:03:30.272Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "0226448BF2A0",
+      "macs": [
+        "0226448BF2A0"
+      ],
+      "ips": [
+        "10.200.34.243"
+      ],
+      "vendor": "eSang Technologies Co., Ltd.",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "fw-01.demo.lan",
+      "seenByInterface": "igb1",
+      "seenByIp": "10.200.34.210",
+      "seenByMac": "02582B993343",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "026A1BB2176F",
+      "macs": [
+        "026A1BB2176F"
+      ],
+      "ips": [
+        "10.200.37.60"
+      ],
+      "vendor": "Airtech I&C Co., Ltd",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "fw-01.demo.lan",
+      "seenByInterface": "vlan0.40",
+      "seenByIp": "10.200.37.113",
+      "seenByMac": "02572B97A00A",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "0239975F9323",
+      "macs": [
+        "0239975F9323"
+      ],
+      "ips": [
+        "10.200.37.19"
+      ],
+      "vendor": "QUESTECH, LTD.",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "rtr-04.demo.lan",
+      "seenByInterface": "br-vlan40",
+      "seenByIp": "10.200.37.101",
+      "seenByMac": "0244728B9DA1",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02C5975B98D2",
+      "macs": [
+        "02C5975B98D2"
+      ],
+      "ips": [
+        "10.200.34.69"
+      ],
+      "vendor": "Cohu, Inc., Electronics Division",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "fw-01.demo.lan",
+      "seenByInterface": "igb1",
+      "seenByIp": "10.200.34.210",
+      "seenByMac": "02582B993343",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "025ED6517303",
+      "macs": [
+        "025ED6517303"
+      ],
+      "ips": [
+        "10.200.36.172"
+      ],
+      "vendor": "XTA Electronics Ltd",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "rtr-04.demo.lan",
+      "seenByInterface": "br-vlan30",
+      "seenByIp": "10.200.36.234",
+      "seenByMac": "0244728B9DA1",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "027E004D5C0E",
+      "macs": [
+        "027E004D5C0E"
+      ],
+      "ips": [
+        "10.200.38.166"
+      ],
+      "vendor": "ESG Solutions",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "fw-01.demo.lan",
+      "seenByInterface": "vlan0.50",
+      "seenByIp": "10.200.38.78",
+      "seenByMac": "02572B97A00A",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02755B49E539",
+      "macs": [
+        "02755B49E539"
+      ],
+      "ips": [
+        "10.200.37.116"
+      ],
+      "vendor": "JiangSu NanJing University Electronic Information Technology Co.,Ltd",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "fw-01.demo.lan",
+      "seenByInterface": "vlan0.40",
+      "seenByIp": "10.200.37.113",
+      "seenByMac": "02572B97A00A",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02FAAE312F17",
+      "macs": [
+        "02FAAE312F17"
+      ],
+      "ips": [
+        "10.200.36.169"
+      ],
+      "vendor": "KTNF",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "rtr-04.demo.lan",
+      "seenByInterface": "br-vlan30",
+      "seenByIp": "10.200.36.234",
+      "seenByMac": "0244728B9DA1",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02A64A0D5812",
+      "macs": [
+        "02A64A0D5812"
+      ],
+      "ips": [
+        "10.200.34.124"
+      ],
+      "vendor": "ALTEON NETWORKS, INC.",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "fw-01.demo.lan",
+      "seenByInterface": "igb1",
+      "seenByIp": "10.200.34.210",
+      "seenByMac": "02582B993343",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "0230D5B1CD11",
+      "macs": [
+        "0230D5B1CD11"
+      ],
+      "ips": [
+        "10.200.37.191"
+      ],
+      "vendor": "NETLINK ICT",
+      "location": "Datacenter-2",
+      "siteId": "datacenter-2",
+      "seenByHostname": "fw-01.demo.lan",
+      "seenByInterface": "vlan0.40",
+      "seenByIp": "10.200.37.113",
+      "seenByMac": "02572B97A00A",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02B85A031D21",
+      "macs": [
+        "02B85A031D21"
+      ],
+      "ips": [
+        "10.200.2.126"
+      ],
+      "vendor": "Quantum Corp.",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02B6378A0C3E",
+      "macs": [
+        "02B6378A0C3E"
+      ],
+      "ips": [
+        "10.200.2.183"
+      ],
+      "vendor": "Utillink",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02B6707A2446",
+      "macs": [
+        "02B6707A2446"
+      ],
+      "ips": [
+        "10.200.2.116"
+      ],
+      "vendor": "OTN Systems N.V.",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02B4FCC0760C",
+      "macs": [
+        "02B4FCC0760C"
+      ],
+      "ips": [
+        "10.200.2.52"
+      ],
+      "vendor": "Shenzhen Changjin Communication Technology Co.,Ltd",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "0287C8589240",
+      "macs": [
+        "0287C8589240"
+      ],
+      "ips": [
+        "10.200.2.105"
+      ],
+      "vendor": "PrimeVOLT Co., Ltd.",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "021DAFF76A48",
+      "macs": [
+        "021DAFF76A48"
+      ],
+      "ips": [
+        "2001:db8:27::7b01:1aa4"
+      ],
+      "vendor": "GigaDevice Semiconductor Inc.",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "firstSeen": "2026-07-05T07:38:17.795Z",
+      "lastSeen": "2026-07-05T14:23:28.271Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02BFEF25CC7E",
+      "macs": [
+        "02BFEF25CC7E"
+      ],
+      "ips": [
+        "10.200.2.177"
+      ],
+      "vendor": "China Leadshine Technology Co.,Ltd",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "029886F25812",
+      "macs": [
+        "029886F25812"
+      ],
+      "ips": [
+        "10.200.2.141"
+      ],
+      "vendor": "Zahner-Elektrik Ingeborg Zahner-Schiller GmbH & Co. KG.",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "020057B41852",
+      "macs": [
+        "020057B41852"
+      ],
+      "ips": [
+        "10.200.2.10"
+      ],
+      "vendor": "JANCUS",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02F910D3EE74",
+      "macs": [
+        "02F910D3EE74"
+      ],
+      "ips": [
+        "10.200.2.27"
+      ],
+      "vendor": "Borea",
+      "location": "Branch-West",
+      "siteId": "branch-west",
+      "seenByHostname": "rtr-02.demo.lan",
+      "seenByInterface": "br-lan",
+      "seenByIp": "10.200.2.247",
+      "seenByMac": "02C37718A2D0",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02A77CBED3E3",
+      "macs": [
+        "02A77CBED3E3"
+      ],
+      "ips": [
+        "10.200.22.251"
+      ],
+      "vendor": "COMELIT GROUP S.P.A",
+      "location": "Datacenter-1",
+      "siteId": "datacenter-1",
+      "seenByHostname": "srv-07.demo.lan",
+      "seenByInterface": "eth0",
+      "seenByIp": "10.200.22.14",
+      "seenByMac": "029529430F77",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "0233D445EE74",
+      "macs": [
+        "0233D445EE74"
+      ],
+      "ips": [
+        "10.200.22.50"
+      ],
+      "vendor": "Microsoft",
+      "location": "Datacenter-1",
+      "siteId": "datacenter-1",
+      "seenByHostname": "srv-08.demo.lan",
+      "seenByInterface": "eth0",
+      "seenByIp": "10.200.22.120",
+      "seenByMac": "0206FAF56B0B",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    },
+    {
+      "mac": "02E523879965",
+      "macs": [
+        "02E523879965"
+      ],
+      "ips": [
+        "10.200.22.239"
+      ],
+      "vendor": "INCOstartec GmbH",
+      "location": "Datacenter-1",
+      "siteId": "datacenter-1",
+      "seenByHostname": "srv-08.demo.lan",
+      "seenByInterface": "eth0",
+      "seenByIp": "10.200.22.120",
+      "seenByMac": "0206FAF56B0B",
+      "firstSeen": "2026-07-05T07:38:05.344Z",
+      "lastSeen": "2026-07-05T14:23:30.895Z",
+      "stale": false,
+      "sourceDown": false
+    }
+  ],
+  "alerts": [],
+  "lastUpdated": "2026-01-01T00:00:00.000Z"
+}

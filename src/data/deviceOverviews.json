@@ -1,0 +1,4270 @@
+{
+  "srv-02.demo.lan": {
+    "device": {
+      "device_id": 37,
+      "hostname": "srv-02.demo.lan",
+      "displayName": "srv-02.demo.lan",
+      "ip": "10.200.0.203",
+      "ips": [],
+      "os": "linux",
+      "version": "6.8.0-124-generic",
+      "icon": "ubuntu.svg",
+      "status": 0,
+      "status_reason": "icmp",
+      "location": "HQ",
+      "uptime": 211,
+      "sysName": "srv-02.demo.lan",
+      "hardware": "ThinkCentre M720q",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.8.0-124-generic",
+      "last_discovered": "2026-07-05 16:00:09",
+      "last_polled": "2026-07-05 16:44:11",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [],
+    "routes": [],
+    "alerts": [],
+    "interfaces": []
+  },
+  "srv-03.demo.lan": {
+    "device": {
+      "device_id": 29,
+      "hostname": "srv-03.demo.lan",
+      "displayName": "srv-03.demo.lan",
+      "ip": "10.200.16.171",
+      "ips": [],
+      "os": "linux",
+      "version": "6.12.87+rpt-rpi-v7",
+      "icon": "raspbian.svg",
+      "status": 0,
+      "status_reason": "icmp",
+      "location": "HQ",
+      "uptime": 56605,
+      "sysName": "srv-03.demo.lan",
+      "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.12.87+rpt-rpi-v7",
+      "last_discovered": "2026-07-05 16:00:07",
+      "last_polled": "2026-07-04 09:48:23",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [],
+    "routes": [],
+    "alerts": [],
+    "interfaces": []
+  },
+  "srv-04.demo.lan": {
+    "device": {
+      "device_id": 6,
+      "hostname": "srv-04.demo.lan",
+      "displayName": "srv-04.demo.lan",
+      "ip": "10.200.17.57",
+      "ips": [
+        "10.200.2.165",
+        "10.200.2.153",
+        "2001:db8:0::ec46:d516",
+        "2001:db8:0::f87c:ab25",
+        "2001:db8:12::c329:7837",
+        "2001:db8:12::9dd9:87d8"
+      ],
+      "os": "linux",
+      "version": "6.1.21-v7+",
+      "icon": "raspbian.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "HQ",
+      "uptime": 78164,
+      "sysName": "srv-04.demo.lan",
+      "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.1.21-v7+",
+      "last_discovered": "2026-07-05 16:00:26",
+      "last_polled": "2026-07-05 18:18:31",
+      "overlayIps": [
+        {
+          "type": "tailscale",
+          "ip": "10.200.17.57"
+        },
+        {
+          "type": "wireguard",
+          "ip": "10.200.18.238"
+        },
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.142"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 2795,
+        "device_id": 6,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 2825,
+        "ifOutOctets_rate": 2767,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 2796,
+        "device_id": 6,
+        "ifName": "wlan0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 733,
+        "ifOutOctets_rate": 812,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 562589,
+        "device_id": 6,
+        "ifName": "zt2lr5pymv",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 682,
+        "ifOutOctets_rate": 285,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 562590,
+        "device_id": 6,
+        "ifName": "wg1",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 223,
+        "ifOutOctets_rate": 300,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 336668,
+        "device_id": 6,
+        "ifName": "tailscale0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 48,
+        "ifOutOctets_rate": 122,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.2.247",
+        "nextHopDevice": "device-01.demo.lan",
+        "iface": "eth0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.18.116",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "wg1",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:94:17:e7:01:9d",
+        "vendor": "Raspberry Pi Foundation",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.165",
+          "2001:db8:13::4521:b5de",
+          "2001:db8:0::ec46:d516"
+        ]
+      },
+      {
+        "ifName": "wlan0",
+        "mac": "02:b1:41:db:a1:bd",
+        "vendor": "Raspberry Pi Foundation",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.153",
+          "2001:db8:14::4383:c493",
+          "2001:db8:0::f87c:ab25"
+        ]
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:06:54:a7:53:63",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.11",
+          "10.200.9.142",
+          "2001:db8:10::0672:5ae2",
+          "2001:db8:16::bc4d:3a54"
+        ]
+      }
+    ]
+  },
+  "device-01.demo.lan": {
+    "device": {
+      "device_id": 35,
+      "hostname": "device-01.demo.lan",
+      "displayName": "device-01.demo.lan",
+      "ip": "10.200.9.142",
+      "ips": [
+        "10.200.2.247"
+      ],
+      "os": "generic",
+      "version": null,
+      "icon": "generic.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "HQ",
+      "uptime": 60534,
+      "sysName": "device-01.demo.lan",
+      "hardware": null,
+      "features": "",
+      "serial": "",
+      "sysContact": "",
+      "sysDescr": "generic",
+      "last_discovered": "2026-07-05 16:01:57",
+      "last_polled": "2026-07-05 18:20:18",
+      "overlayIps": [
+        {
+          "type": "pptp",
+          "ip": "10.200.19.107"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 264848,
+        "device_id": 35,
+        "ifName": "gre0",
+        "ifAlias": "",
+        "ifSpeed": 100000000,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "down",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 264849,
+        "device_id": 35,
+        "ifName": "br0",
+        "ifAlias": "",
+        "ifSpeed": 100000000,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 264850,
+        "device_id": 35,
+        "ifName": "wl0.5",
+        "ifAlias": "",
+        "ifSpeed": 100000000,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "down",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 462179,
+        "device_id": 35,
+        "ifName": "ppp0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "up",
+        "ifType": "ppp"
+      },
+      {
+        "port_id": 445369,
+        "device_id": 35,
+        "ifName": "acom0",
+        "ifAlias": "",
+        "ifSpeed": 100000000,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "down",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.20.176",
+        "iface": "210",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "br0",
+        "mac": "02:7b:7a:14:b2:e0",
+        "vendor": "TP-Link Systems Inc",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.247"
+        ]
+      },
+      {
+        "ifName": "wl0.5",
+        "mac": "02:d8:02:4b:fe:04",
+        "vendor": "",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "acom0",
+        "mac": "02:85:d8:a2:e2:90",
+        "vendor": "XEROX CORPORATION",
+        "ifOperStatus": "down",
+        "ips": []
+      }
+    ]
+  },
+  "srv-05.demo.lan": {
+    "device": {
+      "device_id": 3,
+      "hostname": "srv-05.demo.lan",
+      "displayName": "srv-05.demo.lan",
+      "ip": "10.200.23.173",
+      "ips": [
+        "10.200.24.87",
+        "2001:db8:20::140d:be37"
+      ],
+      "os": "linux",
+      "version": "6.1.0-50-cloud-amd64",
+      "icon": "debian.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Branch-East",
+      "uptime": 78726,
+      "sysName": "srv-05.demo.lan",
+      "hardware": "Not Specified",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.1.0-50-cloud-amd64",
+      "last_discovered": "2026-07-05 16:01:12",
+      "last_polled": "2026-07-05 18:19:12",
+      "overlayIps": [
+        {
+          "type": "tunnel",
+          "ip": "10.200.25.100"
+        },
+        {
+          "type": "wireguard",
+          "ip": "10.200.6.101"
+        },
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.243"
+        },
+        {
+          "type": "tailscale",
+          "ip": "10.200.23.173"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 53,
+        "device_id": 3,
+        "ifName": "ens5",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 560309,
+        "ifOutOctets_rate": 600364,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 378815,
+        "device_id": 3,
+        "ifName": "wghub",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 69752,
+        "ifOutOctets_rate": 512440,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 519577,
+        "device_id": 3,
+        "ifName": "tailscale0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 41108,
+        "ifOutOctets_rate": 4389,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 512002,
+        "device_id": 3,
+        "ifName": "br-cd7d0a278809",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 9345,
+        "ifOutOctets_rate": 8087,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 509831,
+        "device_id": 3,
+        "ifName": "zt2lr5pymv",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 85,
+        "ifOutOctets_rate": 152,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.13.180",
+        "iface": "ens5",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.2.128",
+        "prefix": 24,
+        "nextHop": "10.200.9.11",
+        "nextHopDevice": "srv-04.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "ens5",
+        "mac": "02:8b:b0:f9:0e:94",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.24.87",
+          "2001:db8:20::140d:be37",
+          "2001:db8:21::7cf2:5d05"
+        ]
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:7b:8b:ae:a8:e2",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.243",
+          "2001:db8:10::5240:0a0b",
+          "2001:db8:24::39f2:af88"
+        ]
+      }
+    ]
+  },
+  "srv-06.demo.lan": {
+    "device": {
+      "device_id": 46,
+      "hostname": "srv-06.demo.lan",
+      "displayName": "srv-06.demo.lan",
+      "ip": "10.200.26.237",
+      "ips": [
+        "10.200.2.28",
+        "10.200.2.63",
+        "2001:db8:27::ec93:6458",
+        "2001:db8:27::b068:391e"
+      ],
+      "os": "linux",
+      "version": "6.12.33+deb12-amd64",
+      "icon": "debian.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Branch-West",
+      "uptime": 99699,
+      "sysName": "srv-06.demo.lan",
+      "hardware": "ThinkCentre M920q",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.12.33+deb12-amd64",
+      "last_discovered": "2026-07-05 16:00:34",
+      "last_polled": "2026-07-05 18:19:52",
+      "overlayIps": [
+        {
+          "type": "wireguard",
+          "ip": "10.200.6.240"
+        },
+        {
+          "type": "tailscale",
+          "ip": "10.200.26.237"
+        },
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.68"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 313760,
+        "device_id": 46,
+        "ifName": "eno2",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 7627,
+        "ifOutOctets_rate": 7472,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 489643,
+        "device_id": 46,
+        "ifName": "tailscale0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 1982,
+        "ifOutOctets_rate": 2217,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 366273,
+        "device_id": 46,
+        "ifName": "wlo1",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 677,
+        "ifOutOctets_rate": 856,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 313763,
+        "device_id": 46,
+        "ifName": "wg0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 312,
+        "ifOutOctets_rate": 320,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 562466,
+        "device_id": 46,
+        "ifName": "zt2lr5pymv",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 8,
+        "ifOutOctets_rate": 22,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.2.247",
+        "nextHopDevice": "rtr-02.demo.lan",
+        "iface": "eno2",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.2.128",
+        "prefix": 24,
+        "nextHop": "10.200.9.11",
+        "nextHopDevice": "srv-04.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eno2",
+        "mac": "02:e5:c6:39:6f:d7",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.28",
+          "2001:db8:28::8058:21f3",
+          "2001:db8:27::ec93:6458"
+        ]
+      },
+      {
+        "ifName": "wlo1",
+        "mac": "02:12:6a:8f:1c:4e",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.63",
+          "2001:db8:29::8592:0542",
+          "2001:db8:27::b068:391e"
+        ]
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:85:0c:43:0d:d1",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.52",
+          "10.200.9.175",
+          "10.200.9.68",
+          "2001:db8:10::0487:0a84",
+          "2001:db8:31::6d0b:7e31"
+        ]
+      }
+    ]
+  },
+  "rtr-02.demo.lan": {
+    "device": {
+      "device_id": 49,
+      "hostname": "rtr-02.demo.lan",
+      "displayName": "rtr-02.demo.lan",
+      "ip": "10.200.9.82",
+      "ips": [
+        "10.200.2.247"
+      ],
+      "os": "openwrt",
+      "version": "22.03.3",
+      "icon": "openwrt.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Branch-West",
+      "uptime": 3628746,
+      "sysName": "rtr-02.demo.lan",
+      "hardware": "TP-Link Archer C7 v5",
+      "features": "",
+      "serial": "",
+      "sysContact": "",
+      "sysDescr": "openwrt 22.03.3",
+      "last_discovered": "2026-07-05 16:00:26",
+      "last_polled": "2026-07-05 18:18:44",
+      "overlayIps": [
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.82"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 315806,
+        "device_id": 49,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 332424,
+        "ifOutOctets_rate": 28607,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 315809,
+        "device_id": 49,
+        "ifName": "eth0.2",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 320403,
+        "ifOutOctets_rate": 20569,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 315807,
+        "device_id": 49,
+        "ifName": "br-lan",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 16846,
+        "ifOutOctets_rate": 321030,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 467407,
+        "device_id": 49,
+        "ifName": "wlan0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 11059,
+        "ifOutOctets_rate": 318729,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 561044,
+        "device_id": 49,
+        "ifName": "mon0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 14233,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.28.73",
+        "iface": "9",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:c3:77:18:a2:d0",
+        "vendor": "TP-LINK TECHNOLOGIES CO.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "br-lan",
+        "mac": "02:c3:77:18:a2:d0",
+        "vendor": "TP-LINK TECHNOLOGIES CO.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.247"
+        ]
+      },
+      {
+        "ifName": "eth0.1",
+        "mac": "02:c3:77:18:a2:d0",
+        "vendor": "TP-LINK TECHNOLOGIES CO.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "eth0.2",
+        "mac": "02:c2:77:17:0f:77",
+        "vendor": "TP-LINK TECHNOLOGIES CO.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "wlan0",
+        "mac": "02:c4:77:1a:35:49",
+        "vendor": "TP-LINK TECHNOLOGIES CO.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "wlan1",
+        "mac": "02:c3:77:18:a2:d0",
+        "vendor": "TP-LINK TECHNOLOGIES CO.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:70:79:e7:62:10",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.82"
+        ]
+      },
+      {
+        "ifName": "mon0",
+        "mac": "02:c3:77:18:a2:d0",
+        "vendor": "TP-LINK TECHNOLOGIES CO.",
+        "ifOperStatus": "up",
+        "ips": []
+      }
+    ]
+  },
+  "srv-07.demo.lan": {
+    "device": {
+      "device_id": 54,
+      "hostname": "srv-07.demo.lan",
+      "displayName": "srv-07.demo.lan",
+      "ip": "10.200.9.41",
+      "ips": [
+        "10.200.22.14",
+        "2001:db8:32::271d:87f8",
+        "2001:db8:32::7fea:2fb9"
+      ],
+      "os": "linux",
+      "version": "6.12.90+deb13.1-amd64",
+      "icon": "debian.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-1",
+      "uptime": 351083,
+      "sysName": "srv-07.demo.lan",
+      "hardware": "GOOGLE Panther",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.12.90+deb13.1-amd64",
+      "last_discovered": "2026-07-05 16:00:43",
+      "last_polled": "2026-07-05 18:22:19",
+      "overlayIps": [
+        {
+          "type": "tailscale",
+          "ip": "10.200.32.20"
+        },
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.41"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 546472,
+        "device_id": 54,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 3530,
+        "ifOutOctets_rate": 3066,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 559261,
+        "device_id": 54,
+        "ifName": "tailscale0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 157,
+        "ifOutOctets_rate": 278,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 546474,
+        "device_id": 54,
+        "ifName": "wlan1",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 164,
+        "ifOutOctets_rate": 10,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 546784,
+        "device_id": 54,
+        "ifName": "zt2lr5pymv",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 49,
+        "ifOutOctets_rate": 100,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 546473,
+        "device_id": 54,
+        "ifName": "wlan0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.22.26",
+        "nextHopDevice": "device-02.demo.lan",
+        "iface": "eth0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.2.128",
+        "prefix": 24,
+        "nextHop": "10.200.9.11",
+        "nextHopDevice": "srv-04.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:95:29:43:0f:77",
+        "vendor": "Quanta Computer Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.22.14",
+          "2001:db8:33::5dab:02e8",
+          "2001:db8:32::271d:87f8",
+          "2001:db8:32::7fea:2fb9"
+        ]
+      },
+      {
+        "ifName": "wlan0",
+        "mac": "02:1a:f8:aa:9d:a1",
+        "vendor": "TP-Link Systems Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.31.32",
+          "2001:db8:34::54b4:7d68"
+        ]
+      },
+      {
+        "ifName": "wlan1",
+        "mac": "02:cf:e2:13:48:82",
+        "vendor": "Liteon Technology Corporation",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:35::c597:e00a"
+        ]
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:57:4d:22:b4:16",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.41",
+          "2001:db8:10::5c3f:3b65",
+          "2001:db8:37::dc51:8d0d"
+        ]
+      }
+    ]
+  },
+  "srv-08.demo.lan": {
+    "device": {
+      "device_id": 31,
+      "hostname": "srv-08.demo.lan",
+      "displayName": "srv-08.demo.lan",
+      "ip": "10.200.9.135",
+      "ips": [
+        "10.200.22.120",
+        "10.200.22.133",
+        "2001:db8:32::b549:a5ab",
+        "2001:db8:32::8488:961e"
+      ],
+      "os": "linux",
+      "version": "6.1.21-v7+",
+      "icon": "raspbian.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-1",
+      "uptime": 4321731,
+      "sysName": "srv-08.demo.lan",
+      "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.1.21-v7+",
+      "last_discovered": "2026-07-05 16:00:39",
+      "last_polled": "2026-07-05 18:21:36",
+      "overlayIps": [
+        {
+          "type": "wireguard",
+          "ip": "10.200.18.143"
+        },
+        {
+          "type": "tailscale",
+          "ip": "10.200.33.30"
+        },
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.193"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 44206,
+        "device_id": 31,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 1814,
+        "ifOutOctets_rate": 2291,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 44207,
+        "device_id": 31,
+        "ifName": "wlan0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 268,
+        "ifOutOctets_rate": 333,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 562467,
+        "device_id": 31,
+        "ifName": "zt2lr5pymv",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 203,
+        "ifOutOctets_rate": 215,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 562505,
+        "device_id": 31,
+        "ifName": "wg1",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 43,
+        "ifOutOctets_rate": 41,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 521518,
+        "device_id": 31,
+        "ifName": "wg0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 4,
+        "ifOutOctets_rate": 6,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.22.26",
+        "nextHopDevice": "device-02.demo.lan",
+        "iface": "eth0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.2.128",
+        "prefix": 24,
+        "nextHop": "10.200.9.11",
+        "nextHopDevice": "srv-04.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:06:fa:f5:6b:0b",
+        "vendor": "Raspberry Pi Foundation",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.22.120",
+          "2001:db8:38::b1d8:5197",
+          "2001:db8:32::b549:a5ab"
+        ]
+      },
+      {
+        "ifName": "wlan0",
+        "mac": "02:61:82:46:0b:ab",
+        "vendor": "Raspberry Pi Foundation",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.22.133",
+          "2001:db8:39::0d60:d462",
+          "2001:db8:32::8488:961e"
+        ]
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:dc:1b:c0:8f:f7",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.135",
+          "10.200.9.64",
+          "10.200.9.193",
+          "2001:db8:10::2388:9182",
+          "2001:db8:41::34ae:e273"
+        ]
+      }
+    ]
+  },
+  "srv-09.demo.lan": {
+    "device": {
+      "device_id": 40,
+      "hostname": "srv-09.demo.lan",
+      "displayName": "srv-09.demo.lan",
+      "ip": "10.200.9.171",
+      "ips": [
+        "10.200.34.195"
+      ],
+      "os": "linux",
+      "version": "6.12.92-1-rpi",
+      "icon": "arch.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 2072107,
+      "sysName": "srv-09.demo.lan",
+      "hardware": "Raspberry Pi 4 Model B Rev 1.4",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.12.92-1-rpi",
+      "last_discovered": "2026-07-05 16:00:11",
+      "last_polled": "2026-07-05 18:19:11",
+      "overlayIps": [
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.171"
+        },
+        {
+          "type": "tailscale",
+          "ip": "10.200.35.205"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 224932,
+        "device_id": 40,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 8182,
+        "ifOutOctets_rate": 2282,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 224935,
+        "device_id": 40,
+        "ifName": "tailscale0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 146,
+        "ifOutOctets_rate": 429,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 224934,
+        "device_id": 40,
+        "ifName": "zt2lr5pymv",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 53,
+        "ifOutOctets_rate": 148,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 224933,
+        "device_id": 40,
+        "ifName": "wlan0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.34.210",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "eth0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.2.128",
+        "prefix": 24,
+        "nextHop": "10.200.9.11",
+        "nextHopDevice": "srv-04.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:e9:4d:f8:68:22",
+        "vendor": "Raspberry Pi Trading Ltd",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.195",
+          "2001:db8:42::9782:8a95",
+          "2001:db8:43::df3e:8e37"
+        ]
+      },
+      {
+        "ifName": "wlan0",
+        "mac": "02:91:4d:6d:e0:ca",
+        "vendor": "Raspberry Pi Trading Ltd",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:0d:ca:b7:c7:5f",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.171",
+          "2001:db8:10::47a8:b502",
+          "2001:db8:44::9351:f831"
+        ]
+      }
+    ]
+  },
+  "fw-01.demo.lan": {
+    "device": {
+      "device_id": 5,
+      "hostname": "fw-01.demo.lan",
+      "displayName": "fw-01.demo.lan",
+      "ip": "10.200.34.210",
+      "ips": [
+        "10.200.34.210",
+        "10.200.36.246",
+        "10.200.37.113",
+        "10.200.38.78",
+        "10.200.39.85"
+      ],
+      "os": "opnsense",
+      "version": "26.1.11_6",
+      "icon": "opnsense.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 71212,
+      "sysName": "fw-01.demo.lan",
+      "hardware": "LENOVO 3135 [OPNsense 26.1.11_6 (amd64)]",
+      "features": "",
+      "serial": "",
+      "sysContact": "",
+      "sysDescr": "opnsense 26.1.11_6",
+      "last_discovered": "2026-07-05 16:00:06",
+      "last_polled": "2026-07-05 18:23:03",
+      "overlayIps": [
+        {
+          "type": "wireguard",
+          "ip": "10.200.41.113"
+        },
+        {
+          "type": "pptp",
+          "ip": "10.200.43.111"
+        },
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.112"
+        },
+        {
+          "type": "tunnel",
+          "ip": "10.200.44.56"
+        },
+        {
+          "type": "tailscale",
+          "ip": "10.200.0.95"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 96,
+        "device_id": 5,
+        "ifName": "igb0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 894561,
+        "ifOutOctets_rate": 234572,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 2990,
+        "device_id": 5,
+        "ifName": "igb0_vlan21",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 890272,
+        "ifOutOctets_rate": 231922,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "l2vlan"
+      },
+      {
+        "port_id": 174566,
+        "device_id": 5,
+        "ifName": "pppoe0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 867301,
+        "ifOutOctets_rate": 217402,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "propVirtual"
+      },
+      {
+        "port_id": 97,
+        "device_id": 5,
+        "ifName": "igb1",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 188393,
+        "ifOutOctets_rate": 855600,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 98,
+        "device_id": 5,
+        "ifName": "igb2",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 47904,
+        "ifOutOctets_rate": 37763,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "10.200.45.49",
+        "prefix": 32,
+        "nextHop": "10.200.46.27",
+        "iface": "wg2",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.47.240",
+        "prefix": 32,
+        "nextHop": "10.200.48.73",
+        "iface": "wg3",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.6.101",
+        "prefix": 32,
+        "nextHop": "10.200.6.26",
+        "iface": "wg0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.45.49",
+        "prefix": 0,
+        "nextHop": "10.200.46.27",
+        "iface": "wg2",
+        "protocol": "netmgmt",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.47.240",
+        "prefix": 0,
+        "nextHop": "10.200.48.73",
+        "iface": "wg3",
+        "protocol": "netmgmt",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.6.101",
+        "prefix": 0,
+        "nextHop": "10.200.6.26",
+        "iface": "wg0",
+        "protocol": "netmgmt",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt1ocu1pr81cbq5",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.2.128",
+        "prefix": 24,
+        "nextHop": "10.200.9.11",
+        "nextHopDevice": "srv-04.demo.lan",
+        "iface": "zt1ocu1pr81cbq5",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.50.207",
+        "prefix": 32,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.51.166",
+        "prefix": 32,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.52.61",
+        "prefix": 32,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.53.180",
+        "prefix": 32,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.50.207",
+        "prefix": 0,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "netmgmt",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.51.166",
+        "prefix": 0,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "netmgmt",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.52.61",
+        "prefix": 0,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "netmgmt",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.53.180",
+        "prefix": 0,
+        "nextHop": "10.200.49.182",
+        "iface": "pppoe0",
+        "protocol": "netmgmt",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "igb0",
+        "mac": "02:5d:2b:a1:12:c0",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "igb1",
+        "mac": "02:58:2b:99:33:43",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.210"
+        ]
+      },
+      {
+        "ifName": "igb2",
+        "mac": "02:57:2b:97:a0:0a",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "igb3",
+        "mac": "02:5a:2b:9c:59:a5",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "em0",
+        "mac": "02:f6:87:de:5b:bb",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "igb0_vlan21",
+        "mac": "02:5d:2b:a1:12:c0",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vlan0.10",
+        "mac": "02:57:2b:97:a0:0a",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vlan0.20",
+        "mac": "02:57:2b:97:a0:0a",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vlan0.30",
+        "mac": "02:57:2b:97:a0:0a",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.36.246"
+        ]
+      },
+      {
+        "ifName": "vlan0.40",
+        "mac": "02:57:2b:97:a0:0a",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.37.113"
+        ]
+      },
+      {
+        "ifName": "vlan0.50",
+        "mac": "02:57:2b:97:a0:0a",
+        "vendor": "Intel Corporate",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.38.78",
+          "2001:db8:47::da76:3285"
+        ]
+      },
+      {
+        "ifName": "zt1ocu1pr81cbq5",
+        "mac": "02:0c:43:d2:b5:c9",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.112",
+          "2001:db8:10::b259:4a74",
+          "2001:db8:50::3a3c:4ee1"
+        ]
+      }
+    ]
+  },
+  "sw-01.demo.lan": {
+    "device": {
+      "device_id": 1,
+      "hostname": "sw-01.demo.lan",
+      "displayName": "sw-01.demo.lan",
+      "ip": "10.200.34.28",
+      "ips": [
+        "10.200.54.80",
+        "10.200.34.28"
+      ],
+      "os": "ciscosb",
+      "version": "Software 2.5.9.54, Bootldr 3.5.7.13, Firmware 3.5.7.13",
+      "icon": "cisco.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 4519904,
+      "sysName": "sw-01.demo.lan",
+      "hardware": "SG350-10 V03",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "ciscosb Software 2.5.9.54, Bootldr 3.5.7.13, Firmware 3.5.7.13",
+      "last_discovered": "2026-07-05 16:00:09",
+      "last_polled": "2026-07-05 18:22:25",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 8,
+        "device_id": 1,
+        "ifName": "gi8",
+        "ifAlias": "",
+        "ifSpeed": 100000000,
+        "ifInOctets_rate": 8,
+        "ifOutOctets_rate": 1519595,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 6,
+        "device_id": 1,
+        "ifName": "gi6",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 878134,
+        "ifOutOctets_rate": 186411,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 4,
+        "device_id": 1,
+        "ifName": "gi4",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 17557,
+        "ifOutOctets_rate": 619295,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 3,
+        "device_id": 1,
+        "ifName": "gi3",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 223610,
+        "ifOutOctets_rate": 305618,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 7,
+        "device_id": 1,
+        "ifName": "gi7",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 38619,
+        "ifOutOctets_rate": 54654,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "gi1",
+        "mac": "02:1d:34:01:a1:bd",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi2",
+        "mac": "02:1c:34:00:0e:94",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi3",
+        "mac": "02:1b:33:fe:7b:5b",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi4",
+        "mac": "02:1a:33:fc:e8:a2",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi5",
+        "mac": "02:19:33:fb:55:69",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi6",
+        "mac": "02:18:33:f9:c2:f0",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi7",
+        "mac": "02:d0:33:88:6a:48",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi8",
+        "mac": "02:cf:33:86:d7:af",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi9",
+        "mac": "02:ce:33:85:44:66",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi10",
+        "mac": "02:cd:33:83:b1:4d",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.54.80"
+        ]
+      },
+      {
+        "ifName": "loopback1",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "User Defined Port 1",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.55.247"
+        ]
+      },
+      {
+        "ifName": "stack-port",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "Logical-int 1",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": [
+          "127.0.0.1"
+        ]
+      },
+      {
+        "ifName": "1",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.28",
+          "2001:db8:51::aae2:5a95",
+          "2001:db8:52::3446:0539",
+          "2001:db8:53::7882:5e24",
+          "2001:db8:54::7782:82fc",
+          "2001:db8:55::45a5:71e0",
+          "2001:db8:56::6a06:2bf5"
+        ]
+      },
+      {
+        "ifName": "30",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "40",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:51::aae2:5a95",
+          "2001:db8:52::3446:0539",
+          "2001:db8:53::7882:5e24",
+          "2001:db8:54::7782:82fc",
+          "2001:db8:55::45a5:71e0",
+          "2001:db8:56::6a06:2bf5"
+        ]
+      },
+      {
+        "ifName": "50",
+        "mac": "02:1e:34:03:34:96",
+        "vendor": "Cisco Systems",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:51::aae2:5a95",
+          "2001:db8:52::3446:0539",
+          "2001:db8:53::7882:5e24",
+          "2001:db8:54::7782:82fc",
+          "2001:db8:55::45a5:71e0",
+          "2001:db8:56::6a06:2bf5"
+        ]
+      }
+    ]
+  },
+  "ap-01.demo.lan": {
+    "device": {
+      "device_id": 8,
+      "hostname": "ap-01.demo.lan",
+      "displayName": "ap-01.demo.lan",
+      "ip": "10.200.34.147",
+      "ips": [
+        "10.200.34.147"
+      ],
+      "os": "linksys-ss",
+      "version": "SW: 1.1.0.21, FW: 1.0.0.5",
+      "icon": "linksys.png",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 2013456,
+      "sysName": "ap-01.demo.lan",
+      "hardware": "LGS308P V02",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linksys-ss SW: 1.1.0.21, FW: 1.0.0.5",
+      "last_discovered": "2026-07-05 16:00:14",
+      "last_polled": "2026-07-05 18:22:47",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 138,
+        "device_id": 8,
+        "ifName": "gi2",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 237564,
+        "ifOutOctets_rate": 329159,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 139,
+        "device_id": 8,
+        "ifName": "gi3",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 17976,
+        "ifOutOctets_rate": 31643,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 141,
+        "device_id": 8,
+        "ifName": "gi5",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 17380,
+        "ifOutOctets_rate": 31121,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 143,
+        "device_id": 8,
+        "ifName": "gi7",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 897,
+        "ifOutOctets_rate": 14924,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 144,
+        "device_id": 8,
+        "ifName": "gi8",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 795,
+        "ifOutOctets_rate": 14680,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.34.210",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "1",
+        "protocol": "netmgmt",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "gi1",
+        "mac": "02:ef:d3:97:ae:b4",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi2",
+        "mac": "02:ea:d3:8f:cf:b7",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi3",
+        "mac": "02:e9:d3:8e:3c:ee",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi4",
+        "mac": "02:a1:d3:1c:e4:86",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi5",
+        "mac": "02:a4:d3:21:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi6",
+        "mac": "02:a3:d3:20:0a:e8",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "gi7",
+        "mac": "02:9e:d3:18:2b:4b",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "gi8",
+        "mac": "02:9d:d3:16:98:d2",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "loopback1",
+        "mac": "02:f0:d3:99:41:5d",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "Logical-int 1",
+        "mac": "02:f0:d3:99:41:5d",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "127.0.0.1"
+        ]
+      },
+      {
+        "ifName": "1",
+        "mac": "02:f0:d3:99:41:5d",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:57::d2de:a44b",
+          "2001:db8:53::7882:5e24",
+          "2001:db8:58::4917:eedc",
+          "2001:db8:43::ab1a:f02a"
+        ]
+      },
+      {
+        "ifName": "30",
+        "mac": "02:f0:d3:99:41:5d",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "40",
+        "mac": "02:f0:d3:99:41:5d",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "50",
+        "mac": "02:f0:d3:99:41:5d",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "1",
+        "mac": "02:f0:d3:99:41:5d",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.147"
+        ]
+      }
+    ]
+  },
+  "nas-01.demo.lan": {
+    "device": {
+      "device_id": 13,
+      "hostname": "nas-01.demo.lan",
+      "displayName": "nas-01.demo.lan",
+      "ip": "10.200.34.9",
+      "ips": [
+        "10.200.34.9",
+        "10.200.38.185"
+      ],
+      "os": "dsm",
+      "version": "7.1-42962",
+      "icon": "synology.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 1992451,
+      "sysName": "nas-01.demo.lan",
+      "hardware": "DS918+",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "dsm 7.1-42962",
+      "last_discovered": "2026-07-05 16:00:07",
+      "last_polled": "2026-07-05 18:19:30",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 545500,
+        "device_id": 13,
+        "ifName": "eth2",
+        "ifAlias": "",
+        "ifSpeed": 2500000000,
+        "ifInOctets_rate": 15723,
+        "ifOutOctets_rate": 14700,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 545501,
+        "device_id": 13,
+        "ifName": "eth2.50",
+        "ifAlias": "",
+        "ifSpeed": 2500000000,
+        "ifInOctets_rate": 7810,
+        "ifOutOctets_rate": 14700,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 212,
+        "device_id": 13,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 6351,
+        "ifOutOctets_rate": 863,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 211,
+        "device_id": 13,
+        "ifName": "sit0",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "down",
+        "ifType": "tunnel"
+      },
+      {
+        "port_id": 213,
+        "device_id": 13,
+        "ifName": "eth1",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.38.78",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "eth2.50",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:68:a1:38:73:03",
+        "vendor": "Synology Incorporated",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.9",
+          "2001:db8:43::a3b3:ecbf",
+          "2001:db8:59::f49a:b394"
+        ]
+      },
+      {
+        "ifName": "eth1",
+        "mac": "02:69:a1:3a:06:9c",
+        "vendor": "Synology Incorporated",
+        "ifOperStatus": "down",
+        "ips": [
+          "10.200.56.139"
+        ]
+      },
+      {
+        "ifName": "eth2",
+        "mac": "02:86:18:b1:c3:53",
+        "vendor": "Plugable Technologies",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "eth2.50",
+        "mac": "02:86:18:b1:c3:53",
+        "vendor": "Plugable Technologies",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.38.185",
+          "2001:db8:60::b339:c5ef"
+        ]
+      }
+    ]
+  },
+  "printer-01.demo.lan": {
+    "device": {
+      "device_id": 20,
+      "hostname": "printer-01.demo.lan",
+      "displayName": "printer-01.demo.lan",
+      "ip": "10.200.34.230",
+      "ips": [
+        "10.200.34.230"
+      ],
+      "os": "brother",
+      "version": "1.25",
+      "icon": "brother.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 3716560,
+      "sysName": "printer-01.demo.lan",
+      "hardware": "MFC-T920DW",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "brother 1.25",
+      "last_discovered": "2026-07-05 16:00:06",
+      "last_polled": "2026-07-05 18:22:18",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 1092,
+        "device_id": 20,
+        "ifName": "NC-440h",
+        "ifAlias": "",
+        "ifSpeed": 100000000,
+        "ifInOctets_rate": 5414,
+        "ifOutOctets_rate": 759,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "iso88023Csmacd"
+      },
+      {
+        "port_id": 1093,
+        "device_id": 20,
+        "ifName": "NC-450w",
+        "ifAlias": "",
+        "ifSpeed": 72000000,
+        "ifInOctets_rate": null,
+        "ifOutOctets_rate": null,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "down",
+        "ifType": "iso88023Csmacd"
+      },
+      {
+        "port_id": 1094,
+        "device_id": 20,
+        "ifName": "NC-450w",
+        "ifAlias": "",
+        "ifSpeed": 72000000,
+        "ifInOctets_rate": null,
+        "ifOutOctets_rate": null,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "down",
+        "ifType": "iso88023Csmacd"
+      },
+      {
+        "port_id": 1095,
+        "device_id": 20,
+        "ifName": "SoftwareLoopBack",
+        "ifAlias": "",
+        "ifSpeed": 0,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "softwareLoopback"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "0.0.0.0",
+        "iface": "NC-450w",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.55.128",
+        "prefix": 16,
+        "nextHop": "0.0.0.0",
+        "iface": "NC-450w",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "NC-440h",
+        "mac": "02:b2:26:ca:6a:48",
+        "vendor": "Brother Industries",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.230"
+        ]
+      },
+      {
+        "ifName": "NC-450w",
+        "mac": "02:4b:d3:5c:76:0c",
+        "vendor": "CLOUD NETWORK TECHNOLOGY SINGAPORE PTE. LTD.",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "NC-450w",
+        "mac": "02:c0:ec:4c:cd:11",
+        "vendor": "",
+        "ifOperStatus": "down",
+        "ips": []
+      }
+    ]
+  },
+  "nas-02.demo.lan": {
+    "device": {
+      "device_id": 41,
+      "hostname": "nas-02.demo.lan",
+      "displayName": "nas-02.demo.lan",
+      "ip": "10.200.34.81",
+      "ips": [
+        "10.200.34.81",
+        "10.200.38.209"
+      ],
+      "os": "dsm",
+      "version": "7.1-42962",
+      "icon": "synology.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 1991794,
+      "sysName": "nas-02.demo.lan",
+      "hardware": "DS918+",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "dsm 7.1-42962",
+      "last_discovered": "2026-07-05 16:00:13",
+      "last_polled": "2026-07-05 18:18:48",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 545495,
+        "device_id": 41,
+        "ifName": "eth2",
+        "ifAlias": "",
+        "ifSpeed": 2500000000,
+        "ifInOctets_rate": 12535,
+        "ifOutOctets_rate": 3947,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 545496,
+        "device_id": 41,
+        "ifName": "eth2.50",
+        "ifAlias": "",
+        "ifSpeed": 2500000000,
+        "ifInOctets_rate": 4577,
+        "ifOutOctets_rate": 3947,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 241093,
+        "device_id": 41,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 6110,
+        "ifOutOctets_rate": 754,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 241092,
+        "device_id": 41,
+        "ifName": "sit0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "down",
+        "ifType": "tunnel"
+      },
+      {
+        "port_id": 241094,
+        "device_id": 41,
+        "ifName": "eth1",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 0,
+        "ifOutOctets_rate": 0,
+        "ifOperStatus": "down",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.38.78",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "eth2.50",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:5e:6b:6d:e6:7c",
+        "vendor": "Synology Incorporated",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.81",
+          "2001:db8:43::fa60:d835",
+          "2001:db8:59::fe7b:8e44"
+        ]
+      },
+      {
+        "ifName": "eth1",
+        "mac": "02:5d:6b:6c:53:63",
+        "vendor": "Synology Incorporated",
+        "ifOperStatus": "down",
+        "ips": [
+          "10.200.57.142"
+        ]
+      },
+      {
+        "ifName": "eth2",
+        "mac": "02:8a:0b:45:69:f5",
+        "vendor": "Winstars Technology Ltd",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "eth2.50",
+        "mac": "02:8a:0b:45:69:f5",
+        "vendor": "Winstars Technology Ltd",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.38.209",
+          "2001:db8:61::e055:9858"
+        ]
+      }
+    ]
+  },
+  "hv-01.demo.lan": {
+    "device": {
+      "device_id": 15,
+      "hostname": "hv-01.demo.lan",
+      "displayName": "hv-01.demo.lan",
+      "ip": "10.200.34.100",
+      "ips": [
+        "10.200.34.100"
+      ],
+      "os": "proxmox",
+      "version": "6.8.12-23-pve",
+      "icon": "proxmox.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 1987320,
+      "sysName": "hv-01.demo.lan",
+      "hardware": "LENOVO 11CR0048CK",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "proxmox 6.8.12-23-pve",
+      "last_discovered": "2026-07-05 16:00:06",
+      "last_polled": "2026-07-05 18:20:12",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 257,
+        "device_id": 15,
+        "ifName": "enp2s0",
+        "ifAlias": "",
+        "ifSpeed": 2500000000,
+        "ifInOctets_rate": 85794,
+        "ifOutOctets_rate": 114286,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 306,
+        "device_id": 15,
+        "ifName": "eno1",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 32066,
+        "ifOutOctets_rate": 18704,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 520595,
+        "device_id": 15,
+        "ifName": "tap116i0",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 2077,
+        "ifOutOctets_rate": 42339,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 3378,
+        "device_id": 15,
+        "ifName": "vmbr2",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 24408,
+        "ifOutOctets_rate": 18088,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 532580,
+        "device_id": 15,
+        "ifName": "fwpr121p2",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 3296,
+        "ifOutOctets_rate": 23590,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.34.210",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "vmbr2",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "enp2s0",
+        "mac": "02:38:64:3a:db:3b",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "eno1",
+        "mac": "02:b8:b1:b7:ac:5e",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr2",
+        "mac": "02:b8:b1:b7:ac:5e",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.100"
+        ]
+      },
+      {
+        "ifName": "vmbr2.40",
+        "mac": "02:b8:b1:b7:ac:5e",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr2.50",
+        "mac": "02:b8:b1:b7:ac:5e",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:63::a895:bef0"
+        ]
+      },
+      {
+        "ifName": "vmbr2.30",
+        "mac": "02:b8:b1:b7:ac:5e",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1",
+        "mac": "02:38:64:3a:db:3b",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1.50",
+        "mac": "02:38:64:3a:db:3b",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1.40",
+        "mac": "02:38:64:3a:db:3b",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1.30",
+        "mac": "02:38:64:3a:db:3b",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:64::2b69:ed5b"
+        ]
+      },
+      {
+        "ifName": "fwbr121i0",
+        "mac": "02:e9:4f:34:d9:25",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr121p0",
+        "mac": "02:42:2d:71:fc:2e",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln121i0",
+        "mac": "02:e9:4f:34:d9:25",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr121i1",
+        "mac": "02:69:4b:af:76:0c",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr121p1",
+        "mac": "02:63:fe:58:68:22",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln121i1",
+        "mac": "02:69:4b:af:76:0c",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr121i2",
+        "mac": "02:54:11:fd:b0:5a",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr121p2",
+        "mac": "02:c2:75:95:43:d3",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln121i2",
+        "mac": "02:54:11:fd:b0:5a",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "tap116i0",
+        "mac": "02:b3:3c:c7:b2:e0",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr118i0",
+        "mac": "02:9d:2f:8c:ee:74",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr118p0",
+        "mac": "02:29:3e:29:78:b2",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln118i0",
+        "mac": "02:9d:2f:8c:ee:74",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr120i0",
+        "mac": "02:53:ac:6c:e6:7c",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr120p0",
+        "mac": "02:80:3c:5f:9f:47",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln120i0",
+        "mac": "02:53:ac:6c:e6:7c",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr120i1",
+        "mac": "02:bc:22:b9:6d:31",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr120p1",
+        "mac": "02:a1:ff:70:47:df",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln120i1",
+        "mac": "02:bc:22:b9:6d:31",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr120i2",
+        "mac": "02:16:eb:b9:f3:83",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr120p2",
+        "mac": "02:82:b7:bf:b9:05",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln120i2",
+        "mac": "02:16:eb:b9:f3:83",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr130i0",
+        "mac": "02:92:fe:db:5c:0e",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr130p0",
+        "mac": "02:3c:f0:a9:d9:25",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln130i0",
+        "mac": "02:92:fe:db:5c:0e",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      }
+    ]
+  },
+  "hv-02.demo.lan": {
+    "device": {
+      "device_id": 50,
+      "hostname": "hv-02.demo.lan",
+      "displayName": "hv-02.demo.lan",
+      "ip": "10.200.34.88",
+      "ips": [
+        "10.200.34.88",
+        "2001:db8:49::8cc6:520a",
+        "2001:db8:49::0722:4737"
+      ],
+      "os": "proxmox",
+      "version": "6.8.12-23-pve",
+      "icon": "proxmox.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 1987424,
+      "sysName": "hv-02.demo.lan",
+      "hardware": "LENOVO 11CR0048CK",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "proxmox 6.8.12-23-pve",
+      "last_discovered": "2026-07-05 16:00:14",
+      "last_polled": "2026-07-05 18:21:17",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 415101,
+        "device_id": 50,
+        "ifName": "enp2s0",
+        "ifAlias": "",
+        "ifSpeed": 2500000000,
+        "ifInOctets_rate": 348061,
+        "ifOutOctets_rate": 60945,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 415102,
+        "device_id": 50,
+        "ifName": "eno1",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 25685,
+        "ifOutOctets_rate": 17536,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 415103,
+        "device_id": 50,
+        "ifName": "vmbr2",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 23253,
+        "ifOutOctets_rate": 17100,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 474845,
+        "device_id": 50,
+        "ifName": "fwpr108p0",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 639,
+        "ifOutOctets_rate": 14438,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 474846,
+        "device_id": 50,
+        "ifName": "fwln108i0",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 14438,
+        "ifOutOctets_rate": 639,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.34.210",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "vmbr2",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "enp2s0",
+        "mac": "02:3e:64:44:4d:91",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "eno1",
+        "mac": "02:9b:19:1b:93:23",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr2",
+        "mac": "02:9b:19:1b:93:23",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.88"
+        ]
+      },
+      {
+        "ifName": "vmbr2.30",
+        "mac": "02:9b:19:1b:93:23",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr2.40",
+        "mac": "02:9b:19:1b:93:23",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:65::5bb8:fd97"
+        ]
+      },
+      {
+        "ifName": "vmbr2.50",
+        "mac": "02:9b:19:1b:93:23",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:63::a35e:dde8",
+          "2001:db8:49::8cc6:520a"
+        ]
+      },
+      {
+        "ifName": "vmbr1",
+        "mac": "02:3e:64:44:4d:91",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1.50",
+        "mac": "02:3e:64:44:4d:91",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:49::0722:4737"
+        ]
+      },
+      {
+        "ifName": "vmbr1.40",
+        "mac": "02:3e:64:44:4d:91",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:65::ed2c:ba9b"
+        ]
+      },
+      {
+        "ifName": "vmbr1.30",
+        "mac": "02:3e:64:44:4d:91",
+        "vendor": "REALTEK SEMICONDUCTOR CORP.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:64::2569:d854"
+        ]
+      },
+      {
+        "ifName": "tap101i1",
+        "mac": "02:21:43:ed:86:1c",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr102i0",
+        "mac": "02:40:b7:07:31:cd",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr102p0",
+        "mac": "02:7d:ba:26:32:60",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln102i0",
+        "mac": "02:40:b7:07:31:cd",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr102i1",
+        "mac": "02:f1:ee:bb:5f:87",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr102p1",
+        "mac": "02:be:75:f0:f3:83",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln102i1",
+        "mac": "02:f1:ee:bb:5f:87",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr108i0",
+        "mac": "02:de:a3:11:4a:a8",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr108p0",
+        "mac": "02:12:5e:44:29:35",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln108i0",
+        "mac": "02:de:a3:11:4a:a8",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr111i0",
+        "mac": "02:27:2a:c1:8c:be",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr111p0",
+        "mac": "02:43:b6:be:5b:bb",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln111i0",
+        "mac": "02:27:2a:c1:8c:be",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr119i0",
+        "mac": "02:7e:20:33:6e:f4",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr119p0",
+        "mac": "02:5c:77:d0:cd:11",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln119i0",
+        "mac": "02:7e:20:33:6e:f4",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr119i1",
+        "mac": "02:19:d1:c2:94:76",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr119p1",
+        "mac": "02:78:b9:56:d4:36",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln119i1",
+        "mac": "02:19:d1:c2:94:76",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr138i0",
+        "mac": "02:1e:3b:26:3e:c4",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr138p0",
+        "mac": "02:a2:22:38:10:3a",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln138i0",
+        "mac": "02:1e:3b:26:3e:c4",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr141i0",
+        "mac": "02:b5:44:33:d9:25",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr141p0",
+        "mac": "02:c0:a6:ea:7d:81",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln141i0",
+        "mac": "02:b5:44:33:d9:25",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr141i2",
+        "mac": "02:55:dd:f4:ad:f1",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr141p2",
+        "mac": "02:42:4f:d9:53:63",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln141i2",
+        "mac": "02:55:dd:f4:ad:f1",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwbr142i0",
+        "mac": "02:08:90:36:a2:d0",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwpr142p0",
+        "mac": "02:2a:17:44:33:43",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "fwln142i0",
+        "mac": "02:08:90:36:a2:d0",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      }
+    ]
+  },
+  "hv-03.demo.lan": {
+    "device": {
+      "device_id": 22,
+      "hostname": "hv-03.demo.lan",
+      "displayName": "hv-03.demo.lan",
+      "ip": "10.200.34.183",
+      "ips": [
+        "10.200.34.183"
+      ],
+      "os": "proxmox",
+      "version": "6.8.12-23-pve",
+      "icon": "proxmox.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 1987305,
+      "sysName": "hv-03.demo.lan",
+      "hardware": "LENOVO 11CR0048CK",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "proxmox 6.8.12-23-pve",
+      "last_discovered": "2026-07-05 16:00:05",
+      "last_polled": "2026-07-05 18:19:47",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 3632,
+        "device_id": 22,
+        "ifName": "enp2s0",
+        "ifAlias": "",
+        "ifSpeed": 2500000000,
+        "ifInOctets_rate": 63194,
+        "ifOutOctets_rate": 97203,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 523254,
+        "device_id": 22,
+        "ifName": "tap133i0",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 69547,
+        "ifOutOctets_rate": 49869,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 3633,
+        "device_id": 22,
+        "ifName": "eno1",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 29663,
+        "ifOutOctets_rate": 17295,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 3634,
+        "device_id": 22,
+        "ifName": "vmbr2",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 23219,
+        "ifOutOctets_rate": 16679,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 532600,
+        "device_id": 22,
+        "ifName": "tap132i0",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 99,
+        "ifOutOctets_rate": 16650,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.34.210",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "vmbr2",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "enp2s0",
+        "mac": "02:91:b0:a2:d0:7a",
+        "vendor": "IEEE Registration Authority",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "eno1",
+        "mac": "02:9e:16:e1:b5:c9",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr2",
+        "mac": "02:9e:16:e1:b5:c9",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.183"
+        ]
+      },
+      {
+        "ifName": "vmbr2.40",
+        "mac": "02:9e:16:e1:b5:c9",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr2.50",
+        "mac": "02:9e:16:e1:b5:c9",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:63::9060:1b10"
+        ]
+      },
+      {
+        "ifName": "vmbr2.30",
+        "mac": "02:9e:16:e1:b5:c9",
+        "vendor": "LCFC(Hefei) Electronics Technology co.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1",
+        "mac": "02:91:b0:a2:d0:7a",
+        "vendor": "IEEE Registration Authority",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1.40",
+        "mac": "02:91:b0:a2:d0:7a",
+        "vendor": "IEEE Registration Authority",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1.30",
+        "mac": "02:91:b0:a2:d0:7a",
+        "vendor": "IEEE Registration Authority",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vmbr1.50",
+        "mac": "02:91:b0:a2:d0:7a",
+        "vendor": "IEEE Registration Authority",
+        "ifOperStatus": "up",
+        "ips": [
+          "2001:db8:66::93b3:96fb"
+        ]
+      },
+      {
+        "ifName": "tap129i0",
+        "mac": "02:d4:9f:d7:6b:0b",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "tap129i1",
+        "mac": "02:2f:2a:e7:f5:89",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "tap132i0",
+        "mac": "02:e8:2f:9f:c9:d5",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "tap133i0",
+        "mac": "02:d5:0c:b1:08:c2",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      }
+    ]
+  },
+  "srv-10.demo.lan": {
+    "device": {
+      "device_id": 45,
+      "hostname": "srv-10.demo.lan",
+      "displayName": "srv-10.demo.lan",
+      "ip": "10.200.34.64",
+      "ips": [
+        "10.200.34.64",
+        "10.200.38.120"
+      ],
+      "os": "linux",
+      "version": null,
+      "icon": "debian.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 2005905,
+      "sysName": "srv-10.demo.lan",
+      "hardware": "Iomega Corporation StorCenter Pro xxxx",
+      "features": "",
+      "serial": "",
+      "sysContact": "",
+      "sysDescr": "linux",
+      "last_discovered": "2026-07-05 16:00:23",
+      "last_polled": "2026-07-05 18:22:36",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 254078,
+        "device_id": 45,
+        "ifName": "bond0",
+        "ifAlias": "",
+        "ifSpeed": 2000000000,
+        "ifInOctets_rate": 18771,
+        "ifOutOctets_rate": 647,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 254076,
+        "device_id": 45,
+        "ifName": "enp3s0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 9383,
+        "ifOutOctets_rate": 372,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 254077,
+        "device_id": 45,
+        "ifName": "enp4s0",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 9388,
+        "ifOutOctets_rate": 275,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 478984,
+        "device_id": 45,
+        "ifName": "bond0.50",
+        "ifAlias": "",
+        "ifSpeed": 2000000000,
+        "ifInOctets_rate": 1877,
+        "ifOutOctets_rate": 45,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 544533,
+        "device_id": 45,
+        "ifName": "br-51118c04cc7b",
+        "ifAlias": "",
+        "ifSpeed": 10000000000,
+        "ifInOctets_rate": 312,
+        "ifOutOctets_rate": 320,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.34.210",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "bond0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.38.78",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "bond0.50",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "enp3s0",
+        "mac": "02:ca:88:85:ca:28",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "enp4s0",
+        "mac": "02:ca:88:85:ca:28",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "bond0",
+        "mac": "02:ca:88:85:ca:28",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.64",
+          "2001:db8:67::72f5:1d5a",
+          "2001:db8:43::3826:98b4"
+        ]
+      },
+      {
+        "ifName": "bond0.50",
+        "mac": "02:ca:88:85:ca:28",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.38.120"
+        ]
+      }
+    ]
+  },
+  "rtr-04.demo.lan": {
+    "device": {
+      "device_id": 53,
+      "hostname": "rtr-04.demo.lan",
+      "displayName": "rtr-04.demo.lan",
+      "ip": "10.200.34.198",
+      "ips": [
+        "10.200.36.234",
+        "10.200.38.90",
+        "10.200.34.198",
+        "10.200.37.101"
+      ],
+      "os": "openwrt",
+      "version": "25.12.2",
+      "icon": "openwrt.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Datacenter-2",
+      "uptime": 1037991,
+      "sysName": "rtr-04.demo.lan",
+      "hardware": "Linksys MX5300",
+      "features": "",
+      "serial": "",
+      "sysContact": "",
+      "sysDescr": "openwrt 25.12.2",
+      "last_discovered": "2026-07-05 16:00:16",
+      "last_polled": "2026-07-05 18:22:37",
+      "overlayIps": []
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 507804,
+        "device_id": 53,
+        "ifName": "lan1",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 22889,
+        "ifOutOctets_rate": 23845,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 507810,
+        "device_id": 53,
+        "ifName": "vlan",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 21007,
+        "ifOutOctets_rate": 22792,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 512608,
+        "device_id": 53,
+        "ifName": "phy1-ap0",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 8858,
+        "ifOutOctets_rate": 23554,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 518548,
+        "device_id": 53,
+        "ifName": "vlan.1",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 18832,
+        "ifOutOctets_rate": 12312,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 518550,
+        "device_id": 53,
+        "ifName": "vlan.40",
+        "ifAlias": "",
+        "ifSpeed": 1000000000,
+        "ifInOctets_rate": 1206,
+        "ifOutOctets_rate": 10060,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.34.210",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "br-lan",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "lan1",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "lan2",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "lan3",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "lan4",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "wan",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "down",
+        "ips": []
+      },
+      {
+        "ifName": "br-vlan30",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.36.234"
+        ]
+      },
+      {
+        "ifName": "vlan",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "vlan.30",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "br-vlan50",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.38.90",
+          "2001:db8:70::a9f7:7b44"
+        ]
+      },
+      {
+        "ifName": "vlan.50",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "br-lan",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.34.198"
+        ]
+      },
+      {
+        "ifName": "vlan.1",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "br-vlan40",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.37.101"
+        ]
+      },
+      {
+        "ifName": "vlan.40",
+        "mac": "02:44:72:8b:9d:a1",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "phy1-ap0",
+        "mac": "02:89:72:f8:3c:ee",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "phy0-ap0",
+        "mac": "02:8a:72:f9:cf:b7",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      },
+      {
+        "ifName": "phy2-ap0",
+        "mac": "02:8c:72:fc:f5:89",
+        "vendor": "Belkin International Inc.",
+        "ifOperStatus": "up",
+        "ips": []
+      }
+    ]
+  },
+  "srv-11.demo.lan": {
+    "device": {
+      "device_id": 19,
+      "hostname": "srv-11.demo.lan",
+      "displayName": "srv-11.demo.lan",
+      "ip": "10.200.9.160",
+      "ips": [
+        "10.200.2.249",
+        "10.200.2.34",
+        "2001:db8:71::28fe:1930",
+        "2001:db8:71::23b1:a58a"
+      ],
+      "os": "linux",
+      "version": "6.1.21-v7+",
+      "icon": "raspbian.svg",
+      "status": 1,
+      "status_reason": "",
+      "location": "Branch-North",
+      "uptime": 137485,
+      "sysName": "srv-11.demo.lan",
+      "hardware": "Raspberry Pi 3 Model B Rev 1.2",
+      "features": "",
+      "serial": "DEMO-00000000",
+      "sysContact": "",
+      "sysDescr": "linux 6.1.21-v7+",
+      "last_discovered": "2026-07-05 16:00:28",
+      "last_polled": "2026-07-05 18:23:07",
+      "overlayIps": [
+        {
+          "type": "tailscale",
+          "ip": "10.200.60.78"
+        },
+        {
+          "type": "zerotier",
+          "ip": "10.200.9.5"
+        },
+        {
+          "type": "wireguard",
+          "ip": "10.200.6.44"
+        }
+      ]
+    },
+    "health": [],
+    "topPorts": [
+      {
+        "port_id": 732,
+        "device_id": 19,
+        "ifName": "eth0",
+        "ifAlias": "",
+        "ifSpeed": 1,
+        "ifInOctets_rate": 2875,
+        "ifOutOctets_rate": 3116,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 562463,
+        "device_id": 19,
+        "ifName": "zt2lr5pymv",
+        "ifAlias": "",
+        "ifSpeed": 1,
+        "ifInOctets_rate": 309,
+        "ifOutOctets_rate": 1156,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 455533,
+        "device_id": 19,
+        "ifName": "wlan0",
+        "ifAlias": "",
+        "ifSpeed": 1,
+        "ifInOctets_rate": 439,
+        "ifOutOctets_rate": 753,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "ethernetCsmacd"
+      },
+      {
+        "port_id": 562464,
+        "device_id": 19,
+        "ifName": "wg0",
+        "ifAlias": "",
+        "ifSpeed": 1,
+        "ifInOctets_rate": 1,
+        "ifOutOctets_rate": 3,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      },
+      {
+        "port_id": 562631,
+        "device_id": 19,
+        "ifName": "wg1",
+        "ifAlias": "",
+        "ifSpeed": null,
+        "ifInOctets_rate": 3,
+        "ifOutOctets_rate": 1,
+        "ifOperStatus": "up",
+        "ifAdminStatus": "up",
+        "ifType": "other"
+      }
+    ],
+    "routes": [
+      {
+        "dest": "0.0.0.0",
+        "prefix": 0,
+        "nextHop": "10.200.2.247",
+        "iface": "eth0",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.13.49",
+        "prefix": 16,
+        "nextHop": "10.200.9.243",
+        "nextHopDevice": "srv-05.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.2.128",
+        "prefix": 24,
+        "nextHop": "10.200.9.11",
+        "nextHopDevice": "srv-04.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.15.125",
+        "prefix": 23,
+        "nextHop": "10.200.9.112",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "zt2lr5pymv",
+        "protocol": "local",
+        "type": "remote"
+      },
+      {
+        "dest": "10.200.14.82",
+        "prefix": 23,
+        "nextHop": "10.200.18.116",
+        "nextHopDevice": "fw-01.demo.lan",
+        "iface": "wg1",
+        "protocol": "local",
+        "type": "remote"
+      }
+    ],
+    "alerts": [],
+    "interfaces": [
+      {
+        "ifName": "eth0",
+        "mac": "02:5b:a4:ff:38:f2",
+        "vendor": "Raspberry Pi Foundation",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.249",
+          "2001:db8:72::42f6:b6aa",
+          "2001:db8:71::28fe:1930"
+        ]
+      },
+      {
+        "ifName": "wlan0",
+        "mac": "02:e5:7c:b7:b3:c3",
+        "vendor": "Raspberry Pi Foundation",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.2.34",
+          "2001:db8:73::e6f8:ba3b",
+          "2001:db8:71::23b1:a58a"
+        ]
+      },
+      {
+        "ifName": "zt2lr5pymv",
+        "mac": "02:e2:ee:eb:d2:00",
+        "vendor": "",
+        "ifOperStatus": "up",
+        "ips": [
+          "10.200.9.160",
+          "10.200.9.148",
+          "10.200.9.5",
+          "2001:db8:10::6247:f77a",
+          "2001:db8:75::939b:c023"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "librenms-dash-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "anonymize": "tsx scripts/anonymize/run.ts"
+  },
+  "dependencies": {
+    "d3-force": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/d3-force": "^3.0.10",
+    "@types/node": "^22.15.0",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react-swc": "^4.3.0",
+    "dotenv": "^16.5.0",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vite": "^8.0.8",
+    "vitest": "^4.1.9"
+  }
+}
